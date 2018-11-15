@@ -21,8 +21,8 @@ html, body {
 
 * {
     font-family: 'Lato', Helvetica, sans-serif;
-color: #333447;
-       line-height: 1.5;
+    color: #DAD4CA;
+    line-height: 1.5;
 }
 
 /* TYPOGRAPHY */
@@ -189,6 +189,22 @@ width: 90%;
     display: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: #DAD4CA;
+}
+
+a {
+    text-decoration: #8E2D68;
+}
+
+body {
+    background: #0b2c51;
+}
+
+header {
+    background: #406880;
+}
+
 header nav ul, article nav ul {
     padding: 0;
     list-style: none;
@@ -196,14 +212,28 @@ header nav ul, article nav ul {
 
 header nav ul li, article nav ul li {
     margin: 0.5em 5%;
+    text-align: center;
 }
 
-article.row h1:first-of-type[class^="col"] {
-    margin: 0.5em 2% 0 2%; 
+article.row h2:first-of-type[class^="col"] {
+    font-size: 1.125em;
+    font-weight: normal;
 }
 
-article nav {
+article.container.row nav {
     background: #DAD4CA;
+    margin: 0;
+    padding: 0.5em 2%;
+}
+
+article nav ul li {
+    margin: 0;
+}
+
+article nav ul li a {
+    display: block;
+    color: #8E2D68;
+    padding: 0.5em;
 }
 
 article.container.row nav+p+h3 {
@@ -215,7 +245,21 @@ footer {
 }
 
 footer div:first-of-type {
-    background: gray;
+    background: #32373A;
+}
+
+footer.row div:first-of-type h1 {
+    font-size: 1.125em;
+    font-weight: normal;
+    margin: 2em 2% 0 2%;
+}
+
+footer.row div:first-of-type p {
+    margin: 0 2% 2em 2%;
+}
+
+footer.row .container  p {
+    margin: 5em 2% 0 2%;
 }
 
 footer div.container.row {
@@ -287,14 +331,14 @@ footer div.container.row {
     }
 
     header .banner figure {
-        width: calc((100% - 150px)/2);
-        height: 150px;
+        width: calc((100% - 200px)/2);
+        height: 200px;
         overflow: hidden;
         float: left;
     }
 
     header .banner figure:nth-of-type(2) {
-        width: 150px;
+        width: 200px;
    } 
 
     header .banner img {
@@ -306,7 +350,9 @@ footer div.container.row {
         float: left;
     }
 
-   
+    article nav ul li {
+        text-align: left;
+    }   
 
 }
 
