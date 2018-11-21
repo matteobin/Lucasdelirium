@@ -1,0 +1,33 @@
+header .banner {
+    display: none;
+} 
+
+header nav h1 {
+    display: block;
+}
+
+@media only screen and (min-width: 45em) {
+   header .banner{
+        display: block;
+        width: 100%;
+    }
+
+    header .banner figure, header .banner h1 {
+        width: calc((100% - 200px)/2);
+        height: 200px;
+        overflow: hidden;
+        float: left;
+    }
+
+    header .banner h1 {
+        width: 200px;
+    } 
+
+    header .banner img {
+        width: 100%;
+    }
+
+    header nav h1 {
+        display: none;
+    }
+}
