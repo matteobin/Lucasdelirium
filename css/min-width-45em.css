@@ -44,6 +44,10 @@ html, body {
     line-height: 1.5;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: pridi, verdana, sans-serif;
+}
+
 /* TYPOGRAPHY */
 
 h1 {
@@ -204,18 +208,8 @@ width: 90%;
     display: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: pridi, verdana, sans-serif;
-    font-weight: normal;
-    color: #DAD4CA;
-}
-
-h1, h4 {
-    font-weight: bold;
-}
-
 a {
-    text-decoration: #8E2D68;
+    text-decoration: none;
 }
 
 body {
@@ -231,7 +225,7 @@ header.row nav[class^="col"] h1 {
     margin: 0.5em 7.5%;
 }
 
-header nav ul, article nav ul {
+header nav ul, ul.social, article nav ul {
     padding: 0;
     list-style: none;
 }
@@ -243,15 +237,47 @@ header nav ul li, article nav ul li {
 
 header nav ul li a, article nav ul li a {
     display: block;
+    font-family: pridi, verdana, sans-serif; 
+    font-size: 1.125em;
 }
 
 header nav ul li a {
     padding: 1em;
 }
 
+header ul.social {
+    float: right;
+}
+
+ul.social li {
+    float: left;
+    margin: 2.5px;
+    text-align: center;
+}
+
+ul.social img {
+    width: 30px;
+}
+
+ul.social {
+    width: 175px;
+}
+
+article h1, article h4 {
+    font-weight: 900;
+}
+
+header nav ul li a, article h2, article nav ul li a, article h3 {
+    font-weight: 100;
+}
+
 article.row h2:first-of-type[class^="col"] {
     font-size: 1.125em;
-    font-weight: normal;
+    font-weight: 100;
+}
+
+article p a {
+    color: #669A1A;
 }
 
 article.container.row nav {
@@ -361,12 +387,18 @@ footer div.container.row {
     }
 
     header.row nav[class^="col"] ul {
-        margin: calc((100px/2) - 1.75em);
+        margin: 18.5px;
     }
 
     header nav ul li {
         display: inline;
         float: left;
+    }
+
+    header ul.social {
+        position: absolute;
+        top: 25px;
+        right: 0;
     }
 
     article.row nav[class^="col"]+p {

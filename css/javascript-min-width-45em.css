@@ -30,4 +30,14 @@ header nav h1 {
     header nav h1 {
         display: none;
     }
+
+    header.row nav[class^="col"] ul {
+        margin: 0;
+    }
+
+    header ul.social {
+        top: 140px;
+        right: 0;
+    }
+    
 }
