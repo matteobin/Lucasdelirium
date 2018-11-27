@@ -225,6 +225,10 @@ header.row nav[class^="col"] h1 {
     margin: 0.5em 7.5%;
 }
 
+header nav h1 img {
+    font-size: 15px;
+}
+
 header nav ul, ul.social, article nav ul {
     padding: 0;
     list-style: none;
