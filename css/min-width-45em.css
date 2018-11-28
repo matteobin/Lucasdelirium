@@ -318,7 +318,13 @@ footer.row div:first-of-type p {
 }
 
 footer.row .container  p {
-    margin: 5em 2% 0 2%;
+    font-family: pridi, verdana, sans-serif;
+}
+
+footer .container .social{
+    float: right;
+    margin-top: 5em;
+    margin-right: calc(50% - 117.5px);
 }
 
 footer div.container.row {
