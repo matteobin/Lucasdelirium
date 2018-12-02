@@ -35,7 +35,7 @@ header nav h1 {
         display: none;
     }
 
-    header.row nav[class^="col"] ul {
+    header.row nav.col-12 ul {
         margin: 0;
     }
 

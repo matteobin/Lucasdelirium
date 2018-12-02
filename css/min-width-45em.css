@@ -121,13 +121,13 @@ width: 90%;
     width: 100%;
 }
 
-.row [class^="col"] {
+.row .col-1, .row .col-2, .row .col-3, .row .col-4, .row .col-5, .row .col-6, .row .col-7, .row .col-8, .row .col-9, .row .col-10, .row .col-11, .row .col-12 {
     float: left;
     margin: 0.5em 2%;
     min-height: 0.125em;
 }
 
-.no-margin, .row [class^="col"].no-margin {
+.no-margin, .row .col-1.no-margin, .row .col-2.no-margin, .row .col-3.no-margin, .row .col-4.no-margin, .row .col-5.no-margin, .row .col-6.no-margin, .row .col-7.no-margin, .row .col-8.no-margin, .row .col-9.no-margin, .row .col-10.no-margin, .row .col-11.no-margin, .row .col-12.no-margin {
     margin: 0;
 }
 
@@ -220,7 +220,7 @@ header {
     background: #406880;
 }
 
-header.row nav[class^="col"] h1 {
+header.row nav.col-12 h1 {
     width: 85%;
     margin: 0.5em 7.5%;
 }
@@ -275,9 +275,18 @@ header nav ul li a, article h2, article nav ul li a, article h3 {
     font-weight: 100;
 }
 
-article.row h2:first-of-type[class^="col"] {
+article.row h2.col-12 {
     font-size: 1.125em;
     font-weight: 100;
+    margin-bottom: 0;
+}
+
+article.row figure.banner {
+    margin: 1em 0;
+}
+
+article p {
+    text-align: justify;
 }
 
 article p a {
@@ -303,17 +312,17 @@ footer {
     margin: 5em 0 1em 0;
 }
 
-footer div:first-of-type {
+footer .disclaimer {
     background: #32373A;
 }
 
-footer.row div:first-of-type h1 {
+footer.row .disclaimer h1 {
     font-size: 1.125em;
     font-weight: normal;
     margin: 2em 2% 0 2%;
 }
 
-footer.row div:first-of-type p {
+footer.row .disclaimer p {
     margin: 0 2% 2em 2%;
 }
 
@@ -324,7 +333,7 @@ footer.row .container  p {
 footer .container .social{
     float: right;
     margin-top: 5em;
-    margin-right: calc(50% - 117.5px);
+    margin-right: calc(50% - 122.5px);
 }
 
 footer div.container.row {
@@ -391,12 +400,12 @@ footer div.container.row {
         display: block;
     }
 
-    header.row nav[class^="col"] h1 {
+    header.row nav.col-12 h1 {
         width: 100px;
         margin: 0;
     }
 
-    header.row nav[class^="col"] ul {
+    header.row nav.col-12 ul {
         margin: 18.5px;
     }
 
@@ -411,8 +420,8 @@ footer div.container.row {
         right: 0;
     }
 
-    article.row nav[class^="col"]+p {
-        margin: 0 2% 0.5em 2%;
+    article.row p.first {
+        margin-top: 0;
     }
 
     article nav ul li {
