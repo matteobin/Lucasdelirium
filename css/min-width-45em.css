@@ -268,6 +268,10 @@ ul.social {
     width: 175px;
 }
 
+section.container a.nav {
+    display: none;
+}
+
 article h1, article h4 {
     font-weight: 900;
 }
@@ -276,13 +280,14 @@ header nav ul li a, article h2, article nav ul li a, article h3 {
     font-weight: 100;
 }
 
-article.row h2.col-12 {
+section.container article h2.col-12 {
     font-size: 1.125em;
     font-weight: 100;
     margin-bottom: 0;
 }
 
-article.row figure.banner {
+section.container article figure.banner {
+    width: 100%;
     margin: 1em 0;
 }
 
@@ -290,7 +295,7 @@ article p a {
     color: #669A1A;
 }
 
-article.container.row nav {
+section.container.row article nav {
     background: #DAD4CA;
     margin: 0;
     padding: 0.5em 2%;
@@ -301,7 +306,7 @@ article nav ul li a {
     padding: 0.5em;
 }
 
-article.container.row nav+p+h3 {
+section.container article h3.first {
     margin: 3em 2% 0.5em 2%;
 }
 
@@ -416,11 +421,21 @@ footer div.container.row {
         margin-right: 0;
     }
 
+    section.container a.nav {
+        display: block;
+        margin-top: 16em;
+    }
+
+    section.container.row article {
+        width: 83.33%;
+        margin: 0.5em 0;
+    }
+
     article p, footer .disclaimer p {
         text-align: justify;
     }
 
-    article.row p.first {
+    section.row article p.first {
         margin-top: 0;
     }
 
@@ -432,7 +447,7 @@ footer div.container.row {
 
 @media only screen and (min-width: 60em) { /* 960px */
     .container {
-        width: 75%;
-        max-width: 60em;
+        width: 80%;
+        max-width: 65em;
     }
 }
