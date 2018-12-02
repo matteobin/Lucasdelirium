@@ -249,8 +249,9 @@ header nav ul li a {
     padding: 1em;
 }
 
-header ul.social {
+header ul.social, footer .container .social{
     float: right;
+    margin-right: calc(50% - 122.5px);
 }
 
 ul.social li {
@@ -331,9 +332,7 @@ footer.row .container  p {
 }
 
 footer .container .social{
-    float: right;
     margin-top: 5em;
-    margin-right: calc(50% - 122.5px);
 }
 
 footer div.container.row {
@@ -418,6 +417,7 @@ footer div.container.row {
         position: absolute;
         top: 25px;
         right: 0;
+        margin-right: 0;
     }
 
     article.row p.first {
