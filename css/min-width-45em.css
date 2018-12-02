@@ -286,10 +286,6 @@ article.row figure.banner {
     margin: 1em 0;
 }
 
-article p {
-    text-align: justify;
-}
-
 article p a {
     color: #669A1A;
 }
@@ -418,6 +414,10 @@ footer div.container.row {
         top: 25px;
         right: 0;
         margin-right: 0;
+    }
+
+    article p, footer .disclaimer p {
+        text-align: justify;
     }
 
     article.row p.first {
