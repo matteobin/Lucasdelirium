@@ -12,6 +12,15 @@ header nav h1 {
         width: 100%;
     }
 
+    header .banner figure.first img {
+        float: right;
+    }
+
+    header .banner figure img.col-12 {
+        width: auto;
+        height: 200px;
+    }
+
     header .banner figure, header .banner h1 {
         width: calc((100% - 200px)/2);
         height: 200px;

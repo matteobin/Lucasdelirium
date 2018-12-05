@@ -75,7 +75,7 @@ h6 {
 }
 
 p {
-    font-size: 1.125em;
+    font-size: 1.3em;
     font-weight: 200;
     line-height: 1.8;
 }
@@ -289,6 +289,10 @@ section.container article h2.col-12 {
 section.container article figure.banner {
     width: 100%;
     margin: 1em 0;
+}
+
+article h3 {
+    font-size: 2em;
 }
 
 article p a {
