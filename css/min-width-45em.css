@@ -14,6 +14,21 @@
 }
 
 @font-face {
+    font-family: pridi-extralight;
+    src: url('../fonts/pridi-extralight-webfont.eot');
+    src: url('../fonts/pridi-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         local('Pridi ExtraLight'),
+         local('Pridi-ExtraLight'),
+         url('../fonts/pridi-extralight-webfont.woff2') format('woff2'),
+         url('../fonts/pridi-extralight-webfont.woff') format('woff'),
+         url('../fonts/pridi-extralight-webfont.ttf') format('truetype'),
+         url('../fonts/pridi-extralight-webfont.svg#pridi-extralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: roboto;
     src: url('../fonts/roboto-regular-webfont.eot');
     src: url('../fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -55,15 +70,15 @@ h1 {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.15em;
 }
 
 h3 {
-    font-size: 1.375em;
+    font-size: 2.4em;
 }
 
 h4 {
-    font-size: 1.125em;
+    font-size: 1.2em;
 }
 
 h5 {
@@ -223,6 +238,7 @@ header {
 header.row nav.col-12 h1 {
     width: 85%;
     margin: 0.5em 7.5%;
+    text-align: center;
 }
 
 header nav h1 img {
@@ -277,22 +293,17 @@ article h1, article h4 {
 }
 
 header nav ul li a, article h2, article nav ul li a, article h3 {
-    font-weight: 100;
+    font-family: pridi-extralight, verdana, sans-serif;
+    font-weight: normal;
 }
 
 section.container article h2.col-12 {
-    font-size: 1.125em;
-    font-weight: 100;
     margin-bottom: 0;
 }
 
 section.container article figure.banner {
     width: 100%;
     margin: 1em 0;
-}
-
-article h3 {
-    font-size: 2em;
 }
 
 article p a {
@@ -306,6 +317,7 @@ section.container.row article nav {
 }
 
 article nav ul li a {
+    font-size: 1.5em;
     color: #8E2D68;
     padding: 0.5em;
 }
@@ -427,7 +439,7 @@ footer div.container.row {
 
     section.container a.nav {
         display: block;
-        margin-top: 16em;
+        margin-top: 5em;
     }
 
     section.container.row article {
@@ -435,11 +447,8 @@ footer div.container.row {
         margin: 0.5em 0;
     }
 
-    article p, footer .disclaimer p {
-        text-align: justify;
-    }
-
     section.row article p.first {
+        text-align: justify;
         margin-top: 0;
     }
 

@@ -12,6 +12,9 @@ header nav h1 {
         width: 100%;
     }
 
+    header .banner figure {
+    }
+
     header .banner figure.first img {
         float: right;
     }
@@ -24,12 +27,14 @@ header nav h1 {
     header .banner figure, header .banner h1 {
         width: calc((100% - 200px)/2);
         height: 200px;
+        background: #262727;
         overflow: hidden;
         float: left;
     }
 
     header .banner h1 {
         width: 200px;
+        text-align: center;
     } 
 
     header .banner h1 img {
