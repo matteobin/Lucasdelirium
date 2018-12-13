@@ -57,5 +57,17 @@ header nav h1 {
         top: 140px;
         right: 0;
     }
-    
+
+    section.container.row article {
+        width: 83.33%;
+    }
+
+    section.container article h2.col-12 {
+        margin-bottom: 0;
+    }
+
+    section.container article figure.banner {
+        width: 100%;
+        margin: 1em 0;
+    }
 }

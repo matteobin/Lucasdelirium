@@ -267,7 +267,7 @@ header nav ul li a {
 
 header ul.social, footer .container .social{
     float: right;
-    margin-right: calc(50% - 122.5px);
+    margin-right: calc(50% - 140px);
 }
 
 ul.social li {
@@ -281,7 +281,7 @@ ul.social img {
 }
 
 ul.social {
-    width: 175px;
+    width: 210px;
 }
 
 section.container a.nav {
@@ -298,12 +298,7 @@ header nav ul li a, article h2, article nav ul li a, article h3 {
 }
 
 section.container article h2.col-12 {
-    margin-bottom: 0;
-}
-
-section.container article figure.banner {
-    width: 100%;
-    margin: 1em 0;
+    margin-bottom: 1em;
 }
 
 article p a {
@@ -443,7 +438,7 @@ footer div.container.row {
     }
 
     section.container.row article {
-        width: 83.33%;
+        width: 100%;
         margin: 0.5em 0;
     }
 
