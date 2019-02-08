@@ -20,8 +20,8 @@ header nav h1 {
     }
 
     header .banner figure img.col-12 {
-        width: auto;
-        height: 200px;
+        width: 100%;
+        height: auto;
     }
 
     header .banner figure, header .banner h1 {

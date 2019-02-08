@@ -259,7 +259,7 @@ header nav ul li, article nav ul li {
 header nav ul li a, article nav ul li a {
     display: block;
     font-family: pridi, verdana, sans-serif; 
-    font-size: 1.125em;
+    font-size: 1.5em;
 }
 
 header nav ul li a {
@@ -293,16 +293,16 @@ article h1, article h4 {
     font-weight: 900;
 }
 
-header nav ul li a, article h2, article nav ul li a, article h3 {
+/*header nav ul li a, article h2, article nav ul li a, article h3 {
     font-family: pridi-extralight, verdana, sans-serif;
     font-weight: normal;
-}
+}*/
 
 section.container article h2.col-12 {
     margin-bottom: 1em;
 }
 
-article p a {
+article p a, footer p a {
     color: #669A1A;
 }
 
@@ -313,7 +313,6 @@ section.container.row article nav {
 }
 
 article nav ul li a {
-    font-size: 1.5em;
     color: #8E2D68;
     padding: 0.5em;
 }
@@ -340,7 +339,8 @@ footer.row .disclaimer p {
     margin: 0 2% 2em 2%;
 }
 
-footer.row .container  p {
+footer.row p, footer.row p a {
+    font-size: 1em;
     font-family: pridi, verdana, sans-serif;
 }
 
