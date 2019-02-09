@@ -1,3 +1,7 @@
+body {
+    background: url('../img/trama-sfondo.png');
+}
+
 header .banner {
     display: none;
 } 

@@ -13,7 +13,7 @@
     font-display: swap;
 }
 
-@font-face {
+/*@font-face {
     font-family: pridi-extralight;
     src: url('../fonts/pridi-extralight-webfont.eot');
     src: url('../fonts/pridi-extralight-webfont.eot?#iefix') format('embedded-opentype'),
@@ -26,7 +26,7 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
+}*/
 
 @font-face {
     font-family: roboto;
@@ -89,8 +89,8 @@ h6 {
     font-size: 0.875em;
 }
 
-p {
-    font-size: 1.3em;
+p, ul li {
+    font-size: 1em;
     font-weight: 200;
     line-height: 1.8;
 }
@@ -229,7 +229,6 @@ a {
 
 body {
     background: #0b2c51;
-    background: url('../img/trama-sfondo.png');
 }
 
 header {
@@ -306,6 +305,10 @@ article p a, footer p a {
     color: #669A1A;
 }
 
+article ul {
+    padding: 0;
+}
+
 section.container.row article nav {
     background: #DAD4CA;
     margin: 0;
@@ -318,7 +321,15 @@ article nav ul li a {
 }
 
 section.container article h3.first {
-    margin: 3em 2% 0.5em 2%;
+    margin-top: 3em;
+}
+
+section.container.row article h3 {
+    margin-top: 4em;
+}
+
+section.container article h3.margin-top {
+    margin-top: 6em;
 }
 
 footer {
@@ -340,7 +351,7 @@ footer.row .disclaimer p {
 }
 
 footer.row p, footer.row p a {
-    font-size: 1em;
+    font-size: 0.7em;
     font-family: pridi, verdana, sans-serif;
 }
 
@@ -360,6 +371,10 @@ footer div.container.row {
 }
 
 @media only screen and (min-width: 45em) {  /* 720px */
+    p, ul li {
+        font-size: 1.3em;
+    }
+
     .col-1 {
         width: 4.33%;
     }
@@ -451,6 +466,10 @@ footer div.container.row {
     article nav ul li {
         text-align: left;
     }   
+
+    footer.row p, footer.row p a {
+        font-size: 1em;
+    }
 
 }
 
