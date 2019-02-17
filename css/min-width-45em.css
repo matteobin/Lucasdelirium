@@ -258,7 +258,8 @@ header nav ul li, article nav ul li {
 header nav ul li a, article nav ul li a {
     display: block;
     font-family: pridi, verdana, sans-serif; 
-    font-size: 1.5em;
+    font-size: 1.2em;
+	font-weight: 100;
 }
 
 header nav ul li a {
@@ -371,10 +372,6 @@ footer div.container.row {
 }
 
 @media only screen and (min-width: 45em) {  /* 720px */
-    p, ul li {
-        font-size: 1.3em;
-    }
-
     .col-1 {
         width: 4.33%;
     }

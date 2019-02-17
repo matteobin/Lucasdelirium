@@ -11,12 +11,13 @@ header nav h1 {
 }
 
 @media only screen and (min-width: 45em) {
-   header .banner{
+	p, ul li {
+        font-size: 1.3em;
+    }
+	
+	header .banner{
         display: block;
         width: 100%;
-    }
-
-    header .banner figure {
     }
 
     header .banner figure.first img {
