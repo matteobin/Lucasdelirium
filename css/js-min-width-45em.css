@@ -30,7 +30,7 @@ header nav h1 {
     }
 
     header .banner figure, header .banner h1 {
-        width: calc((100% - 200px)/2);
+        width: calc(50% - 100.5px);
         height: 200px;
         background: #262727;
         overflow: hidden;
