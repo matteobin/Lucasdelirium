@@ -250,9 +250,13 @@ header nav ul, ul.social, article nav ul {
     list-style: none;
 }
 
+header nav ul li {
+	margin: 1em;
+}
+
 header nav ul li, article nav ul li {
-    margin: 0;
-    text-align: center;
+    padding: 0.5em;
+	text-align: center;
 }
 
 header nav ul li a, article nav ul li a {
@@ -260,10 +264,6 @@ header nav ul li a, article nav ul li a {
     font-family: pridi, verdana, sans-serif; 
     font-size: 1.2em;
 	font-weight: 100;
-}
-
-header nav ul li a {
-    padding: 1em;
 }
 
 header ul.social, footer .container .social{
@@ -292,11 +292,6 @@ section.container a.nav {
 article h1, article h4 {
     font-weight: 900;
 }
-
-/*header nav ul li a, article h2, article nav ul li a, article h3 {
-    font-family: pridi-extralight, verdana, sans-serif;
-    font-weight: normal;
-}*/
 
 section.container article h2.col-12 {
     margin-bottom: 1em;
@@ -436,6 +431,8 @@ footer div.container.row {
     header nav ul li {
         display: inline;
         float: left;
+		margin: 0.25em 1em;
+		padding: 0;
     }
 
     header ul.social {
