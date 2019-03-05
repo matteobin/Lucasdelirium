@@ -255,8 +255,11 @@ header nav ul li {
 }
 
 header nav ul li, article nav ul li {
-    padding: 0.5em;
 	text-align: center;
+}
+
+header nav ul li a, article nav ul li a {
+	padding: 0.5em;
 }
 
 header nav ul li a, article nav ul li a {
@@ -313,7 +316,6 @@ section.container.row article nav {
 
 article nav ul li a {
     color: #8E2D68;
-    padding: 0.5em;
 }
 
 section.container article h3.first {
