@@ -176,6 +176,32 @@
 				}
 				delete(lightboxElementsIndex);
 			}
+            document.body.insertAdjacentHTML('beforeend', '<a href="#" id="go-up-button">Torna su</a>')
+            function updateDocumentHeight() {
+                console.log('updated');
+                documentHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
+            }
+            var updateDocumentHeightTimeout = setTimeout(function() {updateDocumentHeight();}, 125);
+            window.addEventListener('resize', function() {
+                clearTimeout(updateDocumentHeightTimeout);
+                updateDocumentHeightTimeout = setTimeout(function() {updateDocumentHeight();}, 125);
+            });
+            function hasClass(element, className) {
+                if (element.classList) {
+                    return element.classList.contains(className);
+                } else {
+                    return new RegExp('(^| )' + className + '( |$)', 'gi').test(element.className);      
+                }
+            }
+            function checkScrolledToShowGoUpButton() {
+                if (document.documentElement.scrollTop>=documentHeight/3) {
+                }
+            }
+            var checkScrolledToShowGoUpButtonTimeout = setTimeout(function() {checkScrolledToShowGoUpButton();}, 250);
+            window.addEventListener('scroll', function() {
+                clearTimeout(checkScrolledToShowGoUpButtonTimeout);
+                checkScrolledToShowGoUpButtonTimeout = setTimeout(function() {checkScrolledToShowGoUpButton();}, 250);
+            });
 		</script>
 	</body>
 </html>
