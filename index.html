@@ -113,27 +113,27 @@
             </div>
         </footer>
 		<script>
+            function addClass(element, className) {
+                if (element.classList) {
+                    element.classList.add(className);
+                }
+                else {
+                    element.className += ' '+className;
+                }
+            }
+            function removeClass(element, className) {
+                if (element.classList) {
+                    element.classList.remove(className);
+                } else {
+                    element.className = element.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+                }
+            }
 			var lightboxElements = document.querySelectorAll('figure.lightbox a');
 			var lightboxElementsNumber = lightboxElements.length;
 			if (lightboxElementsNumber!=0) {
 				document.body.insertAdjacentHTML('beforeend', '<div id="lightbox-background"></div><figure id="lightbox-viewer"><img class="loading" alt="Caricamento"><img class="loaded" alt=""><figcaption></figcaption></figure>');
 				var lightboxBackground = document.getElementById('lightbox-background');
 				var lightboxViewer = document.getElementById('lightbox-viewer');
-				function addClass(element, className) {
-					if (element.classList) {
-						element.classList.add(className);
-					}
-					else {
-						element.className += ' '+className;
-					}
-				}
-				function removeClass(element, className) {
-					if (element.classList) {
-						element.classList.remove(className);
-					} else {
-						element.className = element.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
-					}
-				}
 				function closeLightbox(event) {
 					var tagName = event.target.tagName.toLowerCase();
 					if (tagName!='img' && tagName!='figcaption') {
@@ -176,7 +176,7 @@
 				}
 				delete(lightboxElementsIndex);
 			}
-            document.body.insertAdjacentHTML('beforeend', '<a href="#" id="go-up-button">Torna su</a>')
+document.body.insertAdjacentHTML('beforeend', '<a href="#" id="go-up-button"><img src="img/torna-su.svg" title="Clicca per tornare all\'inizio dell\'articolo." alt="Torna su"></a>')
             function updateDocumentHeight() {
                 console.log('updated');
                 documentHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
@@ -194,7 +194,17 @@
                 }
             }
             function checkScrolledToShowGoUpButton() {
+                var goUpButton = document.getElementById('go-up-button');
                 if (document.documentElement.scrollTop>=documentHeight/3) {
+                    if (!hasClass(goUpButton, 'active')) {
+                        addClass(goUpButton, 'active');
+                        setTimeout(function() {addClass(goUpButton, 'visible');}, 34);
+                        setTimeout(function() {removeClass(goUpButton, 'visible');}, 1834);
+                        setTimeout(function() {removeClass(goUpButton, 'active');}, 2134);
+                    }
+                } else if (hasClass(goUpButton, 'visible')) {
+                    removeClass(goUpButton, 'visible');
+                    setTimeout(function() {removeClass(goUpButton, 'active');}, 334);
                 }
             }
             var checkScrolledToShowGoUpButtonTimeout = setTimeout(function() {checkScrolledToShowGoUpButton();}, 250);
