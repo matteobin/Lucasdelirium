@@ -1,13 +1,12 @@
 <?php
 	$title = 'Articolo';
-	$description = 'Questa è una breve descrizione del contenuto della pagina per i sistemi di ricerca.';
+	$description = 'Questa è una breve descrizione del contenuto della pagina per i motori di ricerca.';
 	require_once('head.php');
 ?>
 <section class="container row">
 	<article class="col-10">
 		<h1 class="col-12 center">Titolo</h1>
 		<h2 class="col-12 center">Sottotitolo</h2>
-
 		<nav class="col-4">
 			<ul>
 				<li><a href="#analisi">Analisi</a></li>
