@@ -282,7 +282,9 @@ footer {
 	margin: 5em 0 1em 0;
 }
 
-footer .disclaimer {
+footer.row .container.row.disclaimer {
+	width: 100%;
+	max-width: 100%;
 	background: #32373A;
 }
 
@@ -302,11 +304,6 @@ footer.row p {
 
 footer .container .social{
 	margin-top: 5em;
-}
-
-footer div.container.row {
-	float: left;
-	margin: 3em 2% 1em 2%; 
 }
 
 @media only screen and (min-width: 33.75em) {
