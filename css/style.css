@@ -278,6 +278,10 @@ section.container article h3.margin-top {
 	margin-top: 6em;
 }
 
+article figure figcaption {
+	font-size: 0.938em;
+}
+
 footer {
 	margin: 5em 0 1em 0;
 }
