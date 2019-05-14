@@ -132,8 +132,8 @@ footer.row p, footer.row p a {
     position: fixed;
     right: 13px;
     bottom: 50px;
-    background: #32373A;
-    padding: 18.75px 28.125px;
+    background: #dad4ca;
+    padding: 11.25px 13.125px;
     font-size: 16px;
     line-height: 1;
     text-align: center;
@@ -144,8 +144,8 @@ footer.row p, footer.row p a {
 } 
 
 #go-up-button img {
-    width: 18.75px;
-    height: 37.5px;
+    width: 48.75px;
+    height: 52.5px;
 }
 
 #go-up-button.active {
@@ -229,14 +229,14 @@ footer.row p, footer.row p a {
     }
 	
 	#go-up-button {
-		padding: 25px 37.5px;
+		padding: 15px 17.5px;
 		border-radius: 50px;
 		-moz-border-radius: 50px;
 		-webkit-border-radius: 50px;
 	} 
 	
 	#go-up-button img {
-		width: 25px;
-		height: 50px;
+		width: 65px;
+		height: 70px;
 	}
 }

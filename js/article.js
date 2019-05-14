@@ -53,7 +53,7 @@ if (lightboxElementsNumber!=0) {
 	function openLightbox(event) {
 		event.preventDefault();
 		document.body.style.overflow = 'hidden';
-		lightboxViewer.children[1].src = event.target.parentElement.href; 
+		lightboxViewer.children[1].src = event.target.parentElement.href;
 		lightboxViewer.children[0].src = event.target.parentElement.children[0].currentSrc;
 		if (typeof(event.target.parentElement.children[1])!=='undefined') {
 			lightboxViewer.children[2].innerHTML = event.target.parentElement.children[1].innerHTML;
@@ -74,7 +74,6 @@ if (lightboxElementsNumber!=0) {
 }
 document.body.insertAdjacentHTML('beforeend', '<a href="#" id="go-up-button"><img src="img/torna-su.svg" title="Clicca per tornare all\'inizio dell\'articolo." alt="Torna su"></a>')
 function updateDocumentHeight() {
-	console.log('updated');
 	documentHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
 }
 var updateDocumentHeightTimeout = setTimeout(function() {updateDocumentHeight();}, 125);
@@ -86,8 +85,15 @@ function hasClass(element, className) {
 	if (element.classList) {
 		return element.classList.contains(className);
 	} else {
-		return new RegExp('(^| )' + className + '( |$)', 'gi').test(element.className);      
+		return new RegExp('(^| )' + className + '( |$)', 'gi').test(element.className);
 	}
+}
+var hideGoUpButtonTimeoutStarted = false;
+function hideGoUpButton() {
+	var goUpButton = document.getElementById('go-up-button');
+    hideGoUpButtonTimeoutStarted = true;
+    setTimeout(function() {removeClass(goUpButton, 'visible');}, 1834);
+    setTimeout(function() {removeClass(goUpButton, 'active');}, 2134);
 }
 function checkScrolledToShowGoUpButton() {
 	var goUpButton = document.getElementById('go-up-button');
@@ -95,9 +101,13 @@ function checkScrolledToShowGoUpButton() {
 		if (!hasClass(goUpButton, 'active')) {
 			addClass(goUpButton, 'active');
 			setTimeout(function() {addClass(goUpButton, 'visible');}, 34);
-			setTimeout(function() {removeClass(goUpButton, 'visible');}, 1834);
-			setTimeout(function() {removeClass(goUpButton, 'active');}, 2134);
-		}
+            hideGoUpButtonTimeoutStarted = false;
+            if (window.innerWidth<720) {
+                hideGoUpButton();
+            }
+        } else if (window.innerWidth<720 && !hideGoUpButtonTimeoutStarted) {
+            hideGoUpButton();
+        }
 	} else if (hasClass(goUpButton, 'visible')) {
 		removeClass(goUpButton, 'visible');
 		setTimeout(function() {removeClass(goUpButton, 'active');}, 334);
@@ -108,3 +118,4 @@ window.addEventListener('scroll', function() {
 	clearTimeout(checkScrolledToShowGoUpButtonTimeout);
 	checkScrolledToShowGoUpButtonTimeout = setTimeout(function() {checkScrolledToShowGoUpButton();}, 250);
 });
+window.addEventListener('resize', checkScrolledToShowGoUpButton);
