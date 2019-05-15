@@ -1,14 +1,13 @@
-function checkWindowWidthToAddBannersAndArticleNav() {
-	if (window.innerWidth>=720 && document.querySelector('header .banner')==null) {
-		window.removeEventListener('resize', checkWindowWidthToAddBannersAndArticleNav);
-		addBannerStyleHeader();
+function checkWindowWidthToAddArticleBannerAndNav() {
+	if (window.innerWidth>=720 && document.querySelector('article .banner')==null) {
+		window.removeEventListener('resize', checkWindowWidthToAddArticleBannerAndNav);
 		document.querySelector('article h2').insertAdjacentHTML('afterend', '<figure class="col-12 banner"><img src="http://rascalhouse.com/wp-content/uploads/2016/03/pizza-banner-1024x350.png" class="col-12 no-margin"></figure>');
 		document.querySelector('article').insertAdjacentHTML('beforebegin', '<a href="#" class="col-1 nav"><img src="img/freccia-sinistra.svg" alt="Indietro" class="col-12 no-margin"></a>');
 		document.querySelector('article').insertAdjacentHTML('afterend', '<a href="#" class="col-1 nav"><img src="img/freccia-destra.svg" alt="Avanti" class="col-12 no-margin"></a>');
 	}
 }
-window.addEventListener('resize', checkWindowWidthToAddBannersAndArticleNav);
-checkWindowWidthToAddBannersAndArticleNav();
+window.addEventListener('resize', checkWindowWidthToAddArticleBannerAndNav);
+checkWindowWidthToAddArticleBannerAndNav();
 function addClass(element, className) {
 	if (element.classList) {
 		element.classList.add(className);
