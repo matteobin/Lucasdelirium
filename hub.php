@@ -25,5 +25,4 @@
         </a>
     </div>
 </section>
-<script src="js/shared.js" defer></script>
 <?php require_once('footer.php'); ?>

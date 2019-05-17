@@ -1,4 +1,4 @@
-        <footer class="row">
+		<footer class="row">
             <div class="container row no-margin disclaimer">
                 <h1 class="col-12">DISCLAIMER:</h1>
                 <p class="col-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu ipsum sit amet orci sagittis iaculis nec quis tortor. Phasellus non efficitur purus, et laoreet nulla. Sed vestibulum sit amet magna eu aliquet. Sed bibendum, nisl et tincidunt pharetra, nisl nisl consequat sem, at pulvinar metus magna non libero.</p>
@@ -13,5 +13,6 @@
                 <p class="col-12 center">Praesent vehicula sem vel tincidunt condimentum. Donec ultricies metus <a href="#">tristique</a> sapien feugiat hendrerit.</p>
             </div>
         </footer>
+		<script src="js/shared.js" defer></script>
 	</body>
 </html>

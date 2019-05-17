@@ -47,6 +47,5 @@
 		<p class="col-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla nunc eu blandit fermentum. Pellentesque porta, est et tincidunt bibendum, tortor urna tincidunt purus, sed rhoncus tellus ex molestie lorem. In in convallis sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin facilisis, turpis ac rutrum bibendum, risus felis placerat augue, id interdum elit lorem at orci. Duis dictum lacinia luctus. In varius nunc ac fringilla viverra. Vestibulum iaculis ornare erat, id suscipit lectus maximus et. Nunc vestibulum elit ac libero finibus congue. Morbi pellentesque, arcu et auctor fringilla, tellus leo placerat ante, bibendum elementum ligula ipsum in lacus. Nullam auctor malesuada libero, eu pulvinar purus. In tempus egestas odio non imperdiet. Mauris facilisis nunc auctor velit pretium, vitae aliquam leo vestibulum.</p>
 	</article>
 </section>
-<script src="js/shared.js" defer></script>
 <script src="js/article.js" defer></script>
 <?php require_once('footer.php'); ?>
