@@ -57,6 +57,10 @@ header ul.social li a img {
 	font-weight: bold;
 }
 
+.container a.nav {
+	display: none;
+}
+
 footer.row p, footer.row p a {
 	font-family: pridi;
 }
@@ -133,7 +137,6 @@ footer.row p, footer.row p a {
     display: none;
     position: fixed;
     right: 13px;
-    /*bottom: 50px;*/
 	bottom: 13px;
     background: #dad4ca;
     padding: 11.25px 13.125px;
@@ -200,8 +203,8 @@ footer.row p, footer.row p a {
         width: 100%;
     }
 	
-	header.row nav.col-12 {
-		width: 100%;
+    header.row nav.col-12 {
+        width: 100%;
 	}
 
     header nav h1 {
@@ -219,15 +222,20 @@ footer.row p, footer.row p a {
 		margin-right: 0;
     }
 
-    section.container.row article {
+	.container a.nav {
+		display: block;
+		margin-top: 5em;
+    }
+
+    .container.row article {
         width: 83.33%;
     }
 
-    section.container article h2.col-12 {
+    .container article h2.col-12 {
         margin-bottom: 0;
     }
 
-    section.container article figure.banner {
+    .container article figure.banner {
         width: 100%;
         margin: 1em 0;
     }
@@ -235,16 +243,4 @@ footer.row p, footer.row p a {
 	#go-up-button {
 		bottom: 50px;
 	}
-	
-	/*#go-up-button {
-		padding: 15px 17.5px;
-		border-radius: 50px;
-		-moz-border-radius: 50px;
-		-webkit-border-radius: 50px;
-	} 
-	
-	#go-up-button img {
-		width: 65px;
-		height: 70px;
-	}*/
 }

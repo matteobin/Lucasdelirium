@@ -1,4 +1,5 @@
-		<footer class="row">
+        </div>
+        <footer class="row">
             <div class="container row no-margin disclaimer">
                 <h1 class="col-12">DISCLAIMER:</h1>
                 <p class="col-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu ipsum sit amet orci sagittis iaculis nec quis tortor. Phasellus non efficitur purus, et laoreet nulla. Sed vestibulum sit amet magna eu aliquet. Sed bibendum, nisl et tincidunt pharetra, nisl nisl consequat sem, at pulvinar metus magna non libero.</p>

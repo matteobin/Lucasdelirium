@@ -236,15 +236,11 @@ ul.social {
 	width: 200px;
 }
 
-section.container a.nav {
-	display: none;
-}
-
 article h1, article h4 {
 	font-weight: 900;
 }
 
-section.container article h2.col-12 {
+.container article h2.col-12 {
 	margin-bottom: 1em;
 }
 
@@ -256,7 +252,7 @@ article ul {
 	padding: 0;
 }
 
-section.container.row article nav {
+.container.row article nav {
 	background: #DAD4CA;
 	margin: 0;
 	padding: 0.5em 2%;
@@ -266,15 +262,15 @@ article nav ul li a {
 	color: #8E2D68;
 }
 
-section.container article h3.first {
+.container article h3.first {
 	margin-top: 3em;
 }
 
-section.container.row article h3 {
+.container.row article h3 {
 	margin-top: 4em;
 }
 
-section.container article h3.margin-top {
+.container article h3.margin-top {
 	margin-top: 6em;
 }
 
@@ -412,17 +408,12 @@ footer .container .social{
 		padding: 0.25em;
 	}
 
-	section.container a.nav {
-		display: block;
-		margin-top: 5em;
-	}
-
-	section.container.row article {
+	.container.row article {
 		width: 100%;
 		margin: 0.5em 0;
 	}
 
-	section.row article p.first {
+	.row article p.first {
 		text-align: justify;
 		margin-top: 0;
 	}
