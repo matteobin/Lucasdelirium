@@ -3,50 +3,6 @@
 	$description = 'Questa è una breve descrizione del contenuto della pagina per i motori di ricerca.';
 	require_once('head.php');
 ?>
-            <style>
-                article h1, article h4 {
-                    font-weight: 900;
-                }
-                .container article h2.col-12 {
-                    margin-bottom: 1em;
-                }
-                article ul {
-                    padding: 0;
-                }
-                .container.row article nav {
-                    background: #DAD4CA;
-                    margin: 0;
-                    padding: 0.5em 2%;
-                }
-                article nav ul li a {
-                    color: #8E2D68;
-                }
-                .container article h3.first {
-                    margin-top: 3em;
-                }
-                .container.row article h3 {
-                    margin-top: 4em;
-                }
-                .container article h3.margin-top {
-                    margin-top: 6em;
-                }
-                article figure figcaption {
-                    font-size: 0.938em;
-                }
-                @media only screen and (min-width: 45em) {
-                    .container.row article {
-                        width: 100%;
-                        margin: 0.5em 0;
-                    }
-                    .row article p.first {
-                        text-align: justify;
-                        margin-top: 0;
-                    }
-                    article nav ul li {
-                        text-align: left;
-                    }   
-                }
-            </style>
             <article class="col-10">
                 <h1 class="col-12 center">Titolo</h1>
                 <h2 class="col-12 center">Sottotitolo</h2>
@@ -94,8 +50,8 @@
                     if (window.innerWidth>=720 && document.querySelector('article .banner')==null) {
                         window.removeEventListener('resize', checkWindowWidthToAddArticleBannerAndNav);
                         document.querySelector('article h2').insertAdjacentHTML('afterend', '<figure class="col-12 banner"><img src="http://rascalhouse.com/wp-content/uploads/2016/03/pizza-banner-1024x350.png" class="col-12 no-margin"></figure>');
-                        document.querySelector('article').insertAdjacentHTML('beforebegin', '<a href="#" class="col-1 nav"><img src="img/freccia-sinistra.svg" alt="Indietro" class="col-12 no-margin"></a>');
-                        document.querySelector('article').insertAdjacentHTML('afterend', '<a href="#" class="col-1 nav"><img src="img/freccia-destra.svg" alt="Avanti" class="col-12 no-margin"></a>');
+                        document.querySelector('article').insertAdjacentHTML('beforebegin', '<a href="#" class="col-1 nav"><svg width="100%" viewBox="0 0 100 39" xmlns="http://www.w3.org/2000/svg"><path class="st0" d="M24.017 21.1v16.778L-.334 18.645 24.017-.505v16.777H99.57v4.87z" fill="#dad4ca"/></svg></a>');
+                        document.querySelector('article').insertAdjacentHTML('afterend', '<a href="#" class="col-1 nav"><svg width="100%" viewBox="0 0 100 39" xmlns="http://www.w3.org/2000/svg">Avanti<path class="st0" d="M-.334 21.1v-4.87h75.552V-.546L99.57 18.686 75.218 37.92V21.14z" fill="#dad4ca"/>Avanti</svg></a>');
                     }
                 }
                 window.addEventListener('resize', checkWindowWidthToAddArticleBannerAndNav);
@@ -163,7 +119,7 @@
                     }
                     delete(lightboxElementsIndex);
                 }
-                document.body.insertAdjacentHTML('beforeend', '<a href="#" id="go-up-button"><img src="img/torna-su.svg" title="Clicca per tornare all\'inizio dell\'articolo." alt="Torna su"></a>')
+                document.body.insertAdjacentHTML('beforeend', '<a href="#" id="go-up-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 70" title="Clicca per tornare all\'inizio dell\'articolo.">Torna su<g fill="#19273d"><path d="M7.7 33.511L32.675 1.876 57.65 33.511z"/><g><path d="M20.376 47.078h-7.441V67.74H9.9V46.79H2.46V44.26h17.916zM41.182 56.976c0 2.24-.362 4.262-1.156 5.924s-1.879 2.962-3.251 3.9c-1.373.868-3.034 1.301-4.913 1.301-1.806 0-3.467-.433-4.84-1.373-1.445-.866-2.529-2.167-3.25-3.828-.796-1.662-1.157-3.613-1.23-5.78V55.46c0-2.24.362-4.19 1.157-5.924s1.878-3.034 3.25-3.901c1.446-.94 3.035-1.373 4.841-1.373 1.878 0 3.468.433 4.912 1.373 1.445.867 2.529 2.167 3.251 3.9.795 1.735 1.156 3.685 1.156 5.925v1.517zm-3.035-1.517c0-2.746-.578-4.84-1.661-6.285s-2.673-2.168-4.624-2.168-3.467.723-4.551 2.168-1.662 3.54-1.734 6.14v1.734c0 2.673.578 4.768 1.662 6.285s2.673 2.312 4.623 2.312 3.468-.723 4.552-2.167 1.661-3.468 1.661-6.141v-1.878zM48.84 58.71v9.03h-3.035V44.622h8.525c2.528 0 4.55.65 5.924 1.95 1.444 1.301 2.167 3.035 2.167 5.13 0 2.24-.723 3.973-2.095 5.201s-3.396 1.807-6.069 1.807zm0-2.529h5.49c1.661 0 2.89-.361 3.756-1.156s1.3-1.878 1.3-3.323c0-1.373-.433-2.456-1.3-3.323-.867-.795-2.095-1.228-3.612-1.3H48.84z"/></g></g></svg></a>')
                 function updateDocumentHeight() {
                     documentHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
                 }
