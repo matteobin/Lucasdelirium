@@ -11,6 +11,10 @@
 		<title>Lucasdelirium | <?php echo($title); ?></title>
 		<meta name="description" content="<?php echo($description); ?>">
 		<meta name="author" content="Matteo Bini">
+        <?php if (isset($previousArticle) && isset($nextArticle)): ?>
+            <link rel="prev" href="<?php echo($previousArticle); ?>">
+            <link rel="next" href="<?php echo($nextArticle); ?>">
+        <?php endif; ?>
         <meta name="robots" content="noindex, nofollow">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
         <style id="style">
