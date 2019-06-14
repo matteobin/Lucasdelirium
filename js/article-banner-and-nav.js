@@ -1,3 +1,4 @@
+document.getElementById('style').insertAdjacentHTML('beforeend', ".container a.nav{display:none}@media only screen and (min-width:45em){.container a.nav{display:none}.container.row article{width:83.33%}}");
 function checkWindowWidthToAddArticleBannerAndNav() {
 	if (window.innerWidth>=720 && document.querySelector('article .banner')==null) {
 		window.removeEventListener('resize', checkWindowWidthToAddArticleBannerAndNav);
