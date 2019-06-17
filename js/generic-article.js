@@ -44,8 +44,8 @@ if (lightboxElementsNumber!=0) {
 		document.body.style.overflow = 'hidden';
 		lightboxViewer.children[1].src = event.target.parentElement.href;
 		lightboxViewer.children[0].src = event.target.parentElement.children[0].currentSrc;
-		if (typeof(event.target.parentElement.children[1])!=='undefined') {
-			lightboxViewer.children[2].innerHTML = event.target.parentElement.children[1].innerHTML;
+		if (typeof(event.target.parentElement.parentElement.children[1])!=='undefined') {
+			lightboxViewer.children[2].innerHTML = event.target.parentElement.parentElement.children[1].innerHTML;
 		}
 		addClass(lightboxViewer.children[0], 'visible');
 		addClass(lightboxBackground, 'active');
