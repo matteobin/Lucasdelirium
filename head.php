@@ -2,7 +2,7 @@
     function sanitizeOutput($buffer) {
         return preg_replace(array('/\>[^\S ]+/s', '/[^\S ]+\</s', '/(\s)+/s', '/<!--(.|\s)*?-->/'), array('>', '<', '\\1', ''), $buffer);
     }
-    //ob_start("sanitizeOutput");
+    ob_start("sanitizeOutput");
 ?>
 <!doctype html>
 <html lang="it">
