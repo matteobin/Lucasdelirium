@@ -8,7 +8,7 @@
 <html lang="it">
 	<head>
 		<meta charset="utf-8">
-		<title>Lucasdelirium | <?php echo($title); ?></title>
+		<title><?php echo($title); ?></title>
 		<meta name="description" content="<?php echo($description); ?>">
 		<meta name="author" content="Matteo Bini">
         <?php if (isset($previousArticle) && isset($nextArticle)): ?>
