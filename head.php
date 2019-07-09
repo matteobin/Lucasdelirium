@@ -15,7 +15,6 @@
             <link rel="prev" href="<?php echo($previousArticle); ?>">
             <link rel="next" href="<?php echo($nextArticle); ?>">
         <?php endif; ?>
-        <meta name="robots" content="noindex, nofollow">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
         <style id="style">
             <?php echo(file_get_contents('css/style.min.css')); ?>
@@ -25,7 +24,7 @@
 	    <header class="row">
 			<div class="container row">
 				<nav class="col-12 full-width-no-margin">
-					<h1 class="logo"><img src="https://images.ecosia.org/-JaM4_bmF9sLn_ASqpS0dB-Mv4c=/0x390/smart/https%3A%2F%2Fwww.tortealcioccolato.com%2Fwp-content%2Fuploads%2F2012%2F03%2F141119204.jpg" alt="Lucasdelirium" class="col-12 no-margin"></h1>
+					<h1 class="logo"><a href="#" class="col-12 full-width-no-margin"><img src="img/guybrush.jpg" alt="Lucasdelirium" class="col-12 full-width-no-margin"></a></h1>
 					<ul class="col-12">
 						<li><a href="#">Home</a></li>
 						<li><a href="#">Menù 1</a></li>

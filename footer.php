@@ -19,7 +19,7 @@
             function checkWindowWidthToAddHeaderBanner() {
                 if (window.innerWidth>=720 && document.querySelector('header .banner')==null) {
                     window.removeEventListener('resize', checkWindowWidthToAddHeaderBanner);
-                    document.querySelector('header').insertAdjacentHTML('afterbegin', '<div class="banner row"><figure class="no-margin first-figure"><img src="http://pizzahousenl.ca/wp-content/uploads/2016/04/pizza_trad_pepperoni.png" class="col-12 no-margin"></figure><h1 class="no-margin logo"><img src="https://images.ecosia.org/-JaM4_bmF9sLn_ASqpS0dB-Mv4c=/0x390/smart/https%3A%2F%2Fwww.tortealcioccolato.com%2Fwp-content%2Fuploads%2F2012%2F03%2F141119204.jpg" alt="Lucasdelirium" class="col-12 no-margin"></h1><figure class="no-margin"><img src="http://pizzahousenl.ca/wp-content/uploads/2016/04/pizza_trad_pepperoni.png" class="col-12 no-margin"></figure></div>');
+                    document.querySelector('header').insertAdjacentHTML('afterbegin', '<div class="banner row"><figure class="first-figure no-margin"><img src="http://pizzahousenl.ca/wp-content/uploads/2016/04/pizza_trad_pepperoni.png" class="col-12 full-width-no-margin"></figure><h1 class="no-margin logo"><a href="#" class="col-12 full-width-no-margin"><img src="https://i.pinimg.com/736x/9f/a6/dd/9fa6dd599e45e455b0768acea1ee22f1.jpg" alt="Lucasdelirium" class="col-12 full-width-no-margin"></a></h1><figure class="no-margin"><img src="http://pizzahousenl.ca/wp-content/uploads/2016/04/pizza_trad_pepperoni.png" class="col-12 full-width-no-margin"></figure></div>');
                 }
             }
             window.addEventListener('resize', checkWindowWidthToAddHeaderBanner);
