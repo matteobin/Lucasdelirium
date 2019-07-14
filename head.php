@@ -10,7 +10,7 @@
 		<meta charset="utf-8">
 		<title><?php echo($title); ?></title>
 		<meta name="description" content="<?php echo($description); ?>">
-		<meta name="author" content="Matteo Bini">
+		<meta name="author" content="Domenico Misciagna">
         <?php if (isset($previousArticle) && isset($nextArticle)): ?>
             <link rel="prev" href="<?php echo($previousArticle); ?>">
             <link rel="next" href="<?php echo($nextArticle); ?>">
