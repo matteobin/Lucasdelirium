@@ -54,7 +54,7 @@
 <?php 
     echo('<script>');
     if (isset($articleBannerImg) && isset($previousArticle) && isset($nextArticle)) {
-        echo('articleBannerImg=\''.$articleBannerImg.'\';previousArticle=\''.$previousArticle.'\';nextArticle=\''.$nextArticle.'\';'.file_get_contents('js/article-banner-and-nav.js'));
+        echo 'articleBannerImg=\''.$articleBannerImg.'\';previousArticle=\''.$previousArticle.'\';leftArrow=\''.file_get_contents('img/freccia-sinistra.svg').'\';nextArticle=\''.$nextArticle.'\';rightArrow=\''.file_get_contents('img/freccia-destra.svg').'\';'.file_get_contents('js/article-banner-and-nav.js');
     }
     echo(file_get_contents('js/generic-article.js').'</script>'); 
     require_once('footer.php');
