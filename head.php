@@ -25,7 +25,7 @@
 	    <header class="row">
 			<div class="container row">
 				<nav class="col-12 full-width-no-margin">
-                    <h1 class="logo"><a href="#" class="col-12 full-width-no-margin"><?php echo file_get_contents('img/logo-lucasdelirium.svg'); ?></a></h1>
+                    <h1 class="logo"><a href="#" class="col-12 full-width-no-margin"><img src="img/logo-lucasdelirium.png" class="full-width-no-margin"><?php /*echo file_get_contents('img/logo-lucasdelirium.svg');*/ ?></a></h1>
 					<ul class="col-12">
 						<li><a href="#">Home</a></li>
 						<li><a href="#">Menù 1</a></li>
