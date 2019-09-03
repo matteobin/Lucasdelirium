@@ -14,7 +14,7 @@
             function checkWindowWidthToAddHeaderBanner() {
                 if (window.innerWidth>=720 && document.querySelector('header .banner')==null) {
                     window.removeEventListener('resize', checkWindowWidthToAddHeaderBanner);
-                    document.querySelector('header').insertAdjacentHTML('afterbegin', '<div class="banner row"><figure class="first-figure no-margin"><img src="http://pizzahousenl.ca/wp-content/uploads/2016/04/pizza_trad_pepperoni.png" class="col-12 full-width-no-margin"></figure><h1 class="no-margin logo"><a href="#" class="col-12 full-width-no-margin"><img src="img/logo-lucasdelirium.png" class="full-width-no-margin"><?php /*echo file_get_contents('img/logo-lucasdelirium.svg');*/ ?></a></h1><figure class="no-margin"><img src="http://pizzahousenl.ca/wp-content/uploads/2016/04/pizza_trad_pepperoni.png" class="col-12 full-width-no-margin"></figure></div>');
+                    document.querySelector('header').insertAdjacentHTML('afterbegin', '<div class="banner row"><figure class="first-figure no-margin"><img src="http://pizzahousenl.ca/wp-content/uploads/2016/04/pizza_trad_pepperoni.png" class="col-12 full-width-no-margin"></figure><h1 class="no-margin logo"><a href="#" class="col-12 full-width-no-margin"><?php echo file_get_contents('img/logo-lucasdelirium.svg'); ?></a></h1><figure class="no-margin"><img src="http://pizzahousenl.ca/wp-content/uploads/2016/04/pizza_trad_pepperoni.png" class="col-12 full-width-no-margin"></figure></div>');
                 }
             }
             window.addEventListener('resize', checkWindowWidthToAddHeaderBanner);
