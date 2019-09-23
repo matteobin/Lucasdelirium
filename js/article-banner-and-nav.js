@@ -2,7 +2,7 @@ document.getElementById('style').insertAdjacentHTML('beforeend', ".container a.n
 function checkWindowWidthToAddArticleBannerAndNav() {
 	if (window.innerWidth>=720 && document.querySelector('article .banner')==null) {
 		window.removeEventListener('resize', checkWindowWidthToAddArticleBannerAndNav);
-		document.querySelector('article h2').insertAdjacentHTML('afterend', '<figure class="col-12 banner"><img src="'+articleBannerImg+'" class="col-12 no-margin"></figure>');
+		document.querySelector('article h2').insertAdjacentHTML('afterend', '<figure class="col-12 hidden-sm banner"><img src="'+articleBannerImg+'" class="col-12 full-width-no-margin"></figure>');
 		document.querySelector('article').insertAdjacentHTML('beforebegin', '<a href="'+previousArticle+'" class="col-1 nav">'+leftArrow+'</a>');
 		document.querySelector('article').insertAdjacentHTML('afterend', '<a href="'+nextArticle+'" class="col-1 nav">'+rightArrow+'</a>');
         delete(articleBannerImg);
