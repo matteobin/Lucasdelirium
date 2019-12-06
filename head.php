@@ -19,6 +19,7 @@
             <?php echo file_get_contents('css/style.min.css'); ?>
         </style>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <?php echo file_get_contents('favicon.html'); ?>
         <script>
             /*    
             @licstart  The following is the entire license notice for the 
@@ -45,7 +46,6 @@
             for the JavaScript code in this page.
             */
         </script>
-        <?php echo file_get_contents('favicon.html'); ?>
 	</head>
 	<body>
 	    <header class="row">
