@@ -1,7 +1,7 @@
 <?php
-	$title = 'Hub';
-	$description = 'Questa è una breve descrizione del contenuto della pagina per i motori di ricerca.';
-	require_once('head.php');
+    $title = 'Hub';
+    $description = 'Questa è una breve descrizione del contenuto della pagina per i motori di ricerca.';
+    require_once('head.php');
 ?>
 <h1 class="col-12 center">Hub</h1>
 <h2 class="col-12 center">Sezioni del sito</h2>
