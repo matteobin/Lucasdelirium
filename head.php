@@ -48,7 +48,7 @@
             for the JavaScript code in this page.
             */
         </script>
-	</head>
+    </head>
     <body>
         <header class="row">
             <div class="container row">
