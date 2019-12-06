@@ -14,12 +14,14 @@
         <?php if (isset($previousArticle) && isset($nextArticle)): ?>
             <link rel="prev" href="<?php echo($previousArticle); ?>">
             <link rel="next" href="<?php echo($nextArticle); ?>">
-        <?php endif; ?>
+        <?php 
+            endif; 
+            echo file_get_contents('favicon.html');
+        ?>
         <style id="style">
             <?php echo file_get_contents('css/style.min.css'); ?>
         </style>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-        <?php echo file_get_contents('favicon.html'); ?>
         <script>
             /*    
             @licstart  The following is the entire license notice for the 
