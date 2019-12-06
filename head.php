@@ -21,7 +21,7 @@
         <style id="style">
             <?php echo file_get_contents('css/style.min.css'); ?>
         </style>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <script>
             /*    
             @licstart  The following is the entire license notice for the 
