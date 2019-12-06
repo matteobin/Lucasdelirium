@@ -50,19 +50,19 @@
         </script>
 	</head>
 	<body>
-	    <header class="row">
-			<div class="container row">
-				<nav class="col-12 full-width-no-margin">
+        <header class="row">
+            <div class="container row">
+                <nav class="col-12 full-width-no-margin">
                     <h1 class="logo"><a href="#" class="col-12 full-width-no-margin"><img src="img/logo-lucasdelirium.png" alt="Lucasdelirium" class="full-width-no-margin"></a></h1>
-					<ul class="col-12">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Menù 1</a></li>
-						<li><a href="#">Menù 2</a></li>
-						<li><a href="#">Menù 3</a></li>
-						<li><a href="#">Menù 4</a></li>
-					</ul>
-				</nav>
+                    <ul class="col-12">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Menù 1</a></li>
+                        <li><a href="#">Menù 2</a></li>
+                        <li><a href="#">Menù 3</a></li>
+                        <li><a href="#">Menù 4</a></li>
+                    </ul>
+                </nav>
                 <?php include 'socials-and-contacts.php'; ?>
-			</div>
+            </div>
         </header>
         <div class="container row">
