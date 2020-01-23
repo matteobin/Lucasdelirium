@@ -9,7 +9,7 @@
 <article class="col-10 article">
     <h1 class="col-12 center title">Titolo</h1>
     <h2 class="col-12 center subtitle">Sottotitolo</h2>
-    <nav class="col-4 nav">
+    <nav id="menù-articolo" class="col-4 nav">
         <ul>
             <li><a href="#analisi">Analisi</a></li>
             <li><a href="#credits">Credits</a></li>
