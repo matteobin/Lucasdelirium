@@ -4,24 +4,30 @@
     }
     ob_start("sanitizeOutput");
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
     <head>
-        <meta charset="utf-8">
-        <title><?php echo($title); ?></title>
-        <meta name="description" content="<?php echo($description); ?>">
-        <meta name="author" content="Domenico Misciagna">
-        <?php if (isset($previousArticle) && isset($nextArticle)): ?>
+        <link id="style-link" rel="stylesheet" href="css/style.min.css">
+        <?php if (isset($previousArticle, $nextArticle)): ?>
             <link rel="prev" href="<?php echo($previousArticle); ?>">
             <link rel="next" href="<?php echo($nextArticle); ?>">
-        <?php 
-            endif; 
-            echo file_get_contents('favicon.html');
-        ?>
-        <style id="style">
-            <?php echo file_get_contents('css/style.min.css'); ?>
-        </style>
+        <?php endif; ?>
+        <meta charset="utf-8">
+        <meta name="author" content="Domenico Misciagna">
+        <meta name="description" content="<?php echo($description); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title><?php echo($title); ?></title>
+        <!-- favicon starts -->
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#272d31">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="msapplication-TileImage" content="mstile-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!-- favicon ends -->
         <script>
             /*    
             @licstart  The following is the entire license notice for the 
@@ -52,8 +58,9 @@
     <body>
         <header class="row">
             <div class="container row">
-                <nav class="col-12 full-width-no-margin">
-                    <h1 class="logo"><a href="#" class="col-12 full-width-no-margin"><img src="img/logo-lucasdelirium.png" alt="Lucasdelirium" class="full-width-no-margin"></a></h1>
+                <h1 class="logo"><a href="#" class="col-12 full-width-no-margin"><img src="img/logo-lucasdelirium.png" alt="Lucasdelirium" class="full-width-no-margin"></a></h1>
+                <nav id="header-nav" class="col-12 full-width-no-margin">
+                    <div class="col-12 close-icon-container"><img id="close-mobile-menu-icon" class="close-icon" src="img/icona-chiudi.svg" alt="Chiudi"></div>
                     <ul class="col-12">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Menù 1</a></li>
@@ -61,8 +68,13 @@
                         <li><a href="#">Menù 3</a></li>
                         <li><a href="#">Menù 4</a></li>
                     </ul>
+                    <?php include 'socials-and-contacts.html'; ?>
                 </nav>
-                <?php include 'socials-and-contacts.php'; ?>
+                <div id="open-mobile-menu-icon" class="mobile-menu-icon">
+                    <span class="1"></span>
+                    <span class="2"></span>
+                    <span class="3"></span>
+                </div>
             </div>
         </header>
         <div class="container row">

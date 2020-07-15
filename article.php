@@ -4,7 +4,7 @@
     $articleBannerImg = 'http://rascalhouse.com/wp-content/uploads/2016/03/pizza-banner-1024x350.png'; 
     $previousArticle = '#';
     $nextArticle = '#';
-    require_once('head.php');
+    require_once 'head.php';
 ?>
 <article class="col-10 article">
     <h1 class="col-12 center title">Titolo</h1>
@@ -57,11 +57,13 @@
     <p class="col-12">Duis tristique, ex vel condimentum laoreet, dui felis blandit ex, vel consequat felis ipsum ac dui. Curabitur ac faucibus massa. Nunc sagittis enim mi, quis lobortis felis dapibus ac. Morbi sit amet pharetra arcu. Etiam viverra interdum ligula, a aliquam eros iaculis vitae. Ut non quam mi. Integer purus ligula, finibus ut elementum vitae, lobortis eget ipsum. Proin a euismod nunc. </p>
     <p class="col-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla nunc eu blandit fermentum. Pellentesque porta, est et tincidunt bibendum, tortor urna tincidunt purus, sed rhoncus tellus ex molestie lorem. In in convallis sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin facilisis, turpis ac rutrum bibendum, risus felis placerat augue, id interdum elit lorem at orci. Duis dictum lacinia luctus. In varius nunc ac fringilla viverra. Vestibulum iaculis ornare erat, id suscipit lectus maximus et. Nunc vestibulum elit ac libero finibus congue. Morbi pellentesque, arcu et auctor fringilla, tellus leo placerat ante, bibendum elementum ligula ipsum in lacus. Nullam auctor malesuada libero, eu pulvinar purus. In tempus egestas odio non imperdiet. Mauris facilisis nunc auctor velit pretium, vitae aliquam leo vestibulum.</p>
 </article>
-<?php 
-    echo('<script>');
-    if (isset($articleBannerImg) && isset($previousArticle) && isset($nextArticle)) {
-        echo 'articleBannerImg=\''.$articleBannerImg.'\';previousArticle=\''.$previousArticle.'\';leftArrow=\''.file_get_contents('img/freccia-sinistra.svg').'\';nextArticle=\''.$nextArticle.'\';rightArrow=\''.file_get_contents('img/freccia-destra.svg').'\';'.file_get_contents('js/article-banner-and-nav.js');
-    }
-    echo(file_get_contents('js/generic-article.js').'</script>'); 
-    require_once('footer.php');
-?>
+<script>
+    <?php 
+        if (isset($articleBannerImg, $previousArticle, $nextArticle)) {
+            echo 'articleBannerImg=\''.$articleBannerImg.'\';previousArticle=\''.$previousArticle.'\';leftArrow=\''.file_get_contents('img/freccia-sinistra.svg').'\';nextArticle=\''.$nextArticle.'\';rightArrow=\''.file_get_contents('img/freccia-destra.svg').'\';';
+            echo '</script><script src="js/article-banner-and-nav.js" defer>';
+        }
+    ?>
+</script>
+<script src="js/generic-article.js" defer></script>
+<?php require_once ('footer.php'); ?>
