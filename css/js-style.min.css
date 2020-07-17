@@ -71,7 +71,6 @@ header nav.open {
     right: 0;
 }
 header.row nav.col-12 .close-icon-container {
-    background: red;
     margin: 0;
     padding: 0.2em 0 0.2em 2%;
     width: 98%;
@@ -88,6 +87,11 @@ header nav ul li {
 }
 article nav ul li a, header nav ul li a {
     font-family: pridi, serif 
+}
+header .socials-and-contacts {
+    float: left;
+    margin-left: 8%;
+    margin-right: 0;
 }
 header .socials-and-contacts li a img {
     font-size: .7em;
@@ -202,14 +206,32 @@ footer.row p, footer.row p a {
     header .banner .logo {
         display: block 
     }
+    header nav {
+        background: none;
+        border: 0;
+        display: block;
+        position: static;
+        -moz-transition: none;
+        -o-transition: none;
+        -webkit-transition: none;
+        transition: none;
+        width: 100%!important;
+    }
+    header nav .close-icon-container {
+        display: none;
+    }
     header nav.col-12 ul.col-12 {
-        margin: 0 
+        margin: 0;
+        width: 100%;
     }
     header .socials-and-contacts {
         margin-right: 0;
         position: absolute;
         right: 0;
         top: -75px 
+    }
+    header .mobile-menu-icon {
+        display: none;
     }
     .row .article {
         margin-left: 8.335%;

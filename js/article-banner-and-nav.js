@@ -1,4 +1,4 @@
-document.getElementById('style').insertAdjacentHTML('beforeend', ".container a.nav{display:none}@media only screen and (min-width:45em){.container a.nav{display:block;margin-top:5em}.row .article{margin-left:0!important;margin-right:0!important}}");
+document.getElementById('style-tag').insertAdjacentHTML('beforeend', ".container a.nav{display:none}@media only screen and (min-width:45em){.container a.nav{display:block;margin-top:5em}.row .article{margin-left:0!important;margin-right:0!important}}");
 function checkWindowWidthToAddArticleBannerAndNav() {
 	if (window.innerWidth>=720 && document.querySelector('article .banner')==null) {
 		window.removeEventListener('resize', checkWindowWidthToAddArticleBannerAndNav);

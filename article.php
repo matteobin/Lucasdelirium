@@ -1,7 +1,7 @@
 <?php
     $title = 'Articolo';
     $description = 'Questa è una breve descrizione del contenuto della pagina per i motori di ricerca.';
-    $articleBannerImg = 'http://rascalhouse.com/wp-content/uploads/2016/03/pizza-banner-1024x350.png'; 
+    $articleBannerImg = 'https://jakesstadiumpizza.com/wp-content/uploads/2015/09/Oven-Combo-1.jpg'; 
     $previousArticle = '#';
     $nextArticle = '#';
     require_once 'head.php';
