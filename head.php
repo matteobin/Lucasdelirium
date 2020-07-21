@@ -33,10 +33,11 @@
     <body>
         <header class="row">
             <div class="container row">
+                <a class="logo" href="#"><img src="img/logo-lucasdelirium.png" alt=""><h1 class="title">Lucasdelirium</h1></a>
                 <h1 class="logo"><a href="#" class="col-12 full-width-no-margin"><img src="img/logo-lucasdelirium.png" alt="Lucasdelirium" class="full-width-no-margin"></a></h1>
                 <nav id="header-nav" class="col-12 full-width-no-margin">
                     <ul class="col-12">
-                        <li><a href="#">Home</a></li>
+                        <li class="first"><a href="#">Home</a></li>
                         <li><a href="#">Menù 1</a></li>
                         <li><a href="#">Menù 2</a></li>
                         <li><a href="#">Menù 3</a></li>

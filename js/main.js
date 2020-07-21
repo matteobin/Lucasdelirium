@@ -8,6 +8,7 @@ function addClass(element, className) {
 	}
 }
 function openMobileMenu() {
+    document.body.style.overflowY = 'hidden';
     var headerNav = document.getElementById('header-nav');
     addClass(headerNav, 'visible');
     setTimeout(function() {
@@ -22,6 +23,7 @@ function removeClass(element, className) {
 	}
 }
 function closeMobileMenu() {
+    document.body.style.overflowY = 'auto';
     var headerNav = document.getElementById('header-nav');
     removeClass(headerNav, 'open');
     setTimeout(function() {

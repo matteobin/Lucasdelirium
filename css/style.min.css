@@ -143,6 +143,7 @@ header{
     background:#406880
 }
 header .logo{
+    display: none;
     float:left;
     margin:.5em 7.5%;
     text-align:center;
@@ -151,11 +152,24 @@ header .logo{
 header .logo img{
     font-size:15px
 }
+header a.logo {
+    display: block;
+}
+header a.logo img {
+    float: left;
+    height: 40px;
+}
+header a.logo .title {
+    float: left;
+    font-size: 1.5em;
+    margin: 3px 0 0 12px;
+}
 .row article .nav ul,.socials-and-contacts,header nav ul{
     list-style:none;
     padding:0
 }
 header nav ul li{
+    float: left;
     margin:1em
 }
 .row article .nav ul li,header nav ul li{
@@ -199,7 +213,7 @@ article .paragraph-subtitle,article .title{
 article .subtitle{
     margin-bottom:1em
 }
-article ul{
+ol, ul{
     padding:0
 }
 .row article .nav{
@@ -289,14 +303,20 @@ footer .container .socials-and-contacts{
         max-width:80em;
         width:100%
     }
+    header .logo {
+        display: block;
+    }
+    header a.logo {
+        display: none 
+    }
     header.row nav.col-12{
-        width: 92%;
+        width: auto;
     }
     header nav ul {
         float: left;
     }
     header.row nav.col-12 ul {
-        width: 648px;
+        width: 510px;
     }
     header nav .socials-and-contacts {
         float: right; 
@@ -309,11 +329,6 @@ footer .container .socials-and-contacts{
     header .logo a{
         height:100%
     }
-    /*header.row nav.col-12 ul{
-        display:table;
-        float:none;
-        width:auto
-    }*/
     header nav.col-12 ul.col-12{
         margin:28px 0
     }
