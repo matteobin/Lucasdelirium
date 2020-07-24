@@ -1,7 +1,7 @@
 var lightboxElements = document.querySelectorAll('.lightbox a');
 var lightboxElementsNumber = lightboxElements.length;
 if (lightboxElementsNumber!=0) {
-	document.body.insertAdjacentHTML('beforeend', '<div class="lightbox-background"></div><figure class="lightbox-viewer"><img class="loading" alt="Caricamento"><img class="loaded" alt=""><figcaption></figcaption></figure>');
+	document.body.insertAdjacentHTML('beforeend', '<div class="lightbox-background"></div><figure class="lightbox-viewer no-margin"><img class="loading" alt="Caricamento"><img class="loaded" alt=""><figcaption></figcaption></figure>');
 	var lightboxBackground = document.getElementsByClassName('lightbox-background')[0];
 	var lightboxViewer = document.getElementsByClassName('lightbox-viewer')[0];
 	function closeLightbox(event) {

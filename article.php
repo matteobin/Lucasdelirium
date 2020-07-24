@@ -9,7 +9,8 @@
 <article class="col-10 article">
     <h1 class="col-12 center title">Titolo</h1>
     <h2 class="col-12 center subtitle">Sottotitolo</h2>
-    <nav id="menù-articolo" class="col-4 nav">
+    <nav id="menù-articolo" class="col-4 no-margin" aria-labelledby="nav-articolo">
+        <h2 id="nav-articolo">Navigazione articolo</h2>
         <ul>
             <li><a href="#analisi">Analisi</a></li>
             <li><a href="#credits">Credits</a></li>
@@ -60,8 +61,7 @@
 <script>
     <?php 
         if (isset($articleBannerImg, $previousArticle, $nextArticle)) {
-            echo 'articleBannerImg=\''.$articleBannerImg.'\';previousArticle=\''.$previousArticle.'\';leftArrow=\''.file_get_contents('img/freccia-sinistra.svg').'\';nextArticle=\''.$nextArticle.'\';rightArrow=\''.file_get_contents('img/freccia-destra.svg').'\';';
-            echo '</script><script src="js/article-banner-and-nav.js" defer>';
+            echo 'articleBannerImg=\''.$articleBannerImg.'\';previousArticle=\''.$previousArticle.'\';leftArrow=\''.file_get_contents('img/freccia-sinistra.svg').'\';nextArticle=\''.$nextArticle.'\';rightArrow=\''.file_get_contents('img/freccia-destra.svg').'\';</script><script src="js/article-banner-and-nav.js" defer>';
         }
     ?>
 </script>

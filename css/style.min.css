@@ -1,10 +1,5 @@
 body,html{
-    height:100%;
-    left:0;
     margin:0;
-    padding:0;
-    top:0;
-    width:100%
 }
 body{
     color:#dad4ca;
@@ -19,7 +14,7 @@ h2{
 h3{
     font-size:2.4em
 }
-.row article .nav ul li a,footer .disclaimer .title,h4,header nav ul li a{
+.row article nav ul li a,footer .disclaimer .title,h4,header nav ul li a{
     font-size:1.2em
 }
 blockquote,h5,ol li,p,ul li{
@@ -139,56 +134,80 @@ a{
 body{
     background:#0b2c51
 }
+.skip-nav{
+    background:#000;
+    border: solid 0.13em #fff;
+    border-radius:1em;
+    color:#fff;
+    font-size:1em;
+    left:-23em;
+    padding: 1em 2%;
+    position:fixed;
+    top:0;
+    z-index:-1;
+}
+.skip-nav:focus{
+    left:0;
+    z-index:1;
+}
 header{
-    background:#406880
+    background:#406880;
+    overflow-x:auto;
+    overflow-y:hidden;
+}
+header .container {
+    width: 800px;
 }
 header .logo{
-    display: none;
-    float:left;
-    margin:.5em 7.5%;
+    float: left;
+    height: 100px;
     text-align:center;
-    width:85%
+    width: 100px;
 }
 header .logo img{
-    font-size:15px
+    font-size:15px;
+    width:100%;
 }
-header a.logo {
-    display: block;
-}
-header a.logo img {
-    float: left;
-    height: 40px;
-}
-header a.logo .title {
-    float: left;
-    font-size: 1.5em;
-    margin: 3px 0 0 12px;
-}
-.row article .nav ul,.socials-and-contacts,header nav ul{
+.row article nav ul,.socials-and-contacts,header nav ul{
     list-style:none;
     padding:0
 }
+#nav-sito,#nav-articolo{
+    left:-23em;
+    opacity:0;
+    position:absolute;
+    top:0;
+    z-index:-1;
+}
+header nav {
+    float:left;
+}
+header nav ul {
+    float:left;
+    margin:28px 0;
+}
+header .socials-and-contacts{
+    float:right;
+    margin:34px 0 0 0;
+} 
 header nav ul li{
     float: left;
-    margin:1em
+    margin:0 1em;
 }
-.row article .nav ul li,header nav ul li{
+.row article nav ul li,header nav ul li{
     text-align:center
-}
-header nav ul li a{
-    color:#dad4ca
 }
 header nav ul.socials-and-contacts li a {
     padding: 0;
 }
-.row article .nav ul li a,header nav ul li a{
+.row article nav ul li a,header nav ul li a{
     display:block;
     font-weight:100;
     padding:.5em
 }
-footer .container .socials-and-contacts,header .socials-and-contacts{
-    float:right;
-    margin-right:calc(50% - 135px)
+header nav ul li a{
+    color:#dad4ca;
+    padding:.25em;
 }
 .socials-and-contacts li{
     float:left;
@@ -198,11 +217,8 @@ footer .container .socials-and-contacts,header .socials-and-contacts{
 .socials-and-contacts li a{
     float:left;
 }
-.socials-and-contacts img{
+.socials-and-contacts li a,.socials-and-contacts img{
     height: 30px;
-}
-header.row nav.col-12 .socials-and-contacts, .socials-and-contacts{
-    width:200px
 }
 header nav ul.socials-and-contacts li a {
     font-size: 1em;
@@ -216,12 +232,12 @@ article .subtitle{
 ol, ul{
     padding:0
 }
-.row article .nav{
+.row article nav{
     background:#dad4ca;
     margin:0;
     padding:.5em 2%
 }
-.row article .nav ul li a{
+.row article nav ul li a{
     color:#8e2d68
 }
 .row article .first-paragraph-title{
@@ -252,7 +268,8 @@ footer.row .disclaimer p{
     margin:0 2% 2em 2%
 }
 footer .container .socials-and-contacts{
-    margin-top:5em
+    display:inline-block;
+    margin-top:4.5em
 }
 @media only screen and (min-width:33.75em){
     .container{
@@ -299,52 +316,21 @@ footer .container .socials-and-contacts{
     .hidden-sm{
         display:block
     }
-    header .container{
-        max-width:80em;
-        width:100%
-    }
     header .logo {
         display: block;
-    }
-    header a.logo {
-        display: none 
     }
     header.row nav.col-12{
         width: auto;
     }
-    header nav ul {
-        float: left;
-    }
-    header.row nav.col-12 ul {
-        width: 510px;
-    }
     header nav .socials-and-contacts {
         float: right; 
-    }
-    header .logo{
-        margin:0;
-        width:100px;
-        height:100px
     }
     header .logo a{
         height:100%
     }
-    header nav.col-12 ul.col-12{
-        margin:28px 0
-    }
-    header .socials-and-contacts{
-        margin:32px 0 0 0
-    }
-    header nav ul li{
-        float:left;
-        margin:0 1em
-    }
     header .socials-and-contacts{
         float:right;
         margin-right:0
-    }
-    header nav ul li a{
-        padding:.25em
     }
     .row .article{
         margin:.5em 0;
@@ -354,7 +340,7 @@ footer .container .socials-and-contacts{
         margin-top:0;
         text-align:justify
     }
-    .row article .nav ul li{
+    .row article nav ul li{
         text-align:left
     }
 }

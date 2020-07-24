@@ -33,13 +33,14 @@ function closeMobileMenu() {
 function insertHTML() {
     if (window.innerWidth>=720) {
         if (document.querySelector('header .banner')==null) {
-            document.querySelector('header').insertAdjacentHTML('afterbegin', '<div class="banner row"><figure class="first-figure no-margin"><img src="http://pizzahousenl.ca/wp-content/uploads/2016/04/pizza_trad_pepperoni.png" class="col-12 full-width-no-margin"></figure><h1 class="no-margin logo"><a href="#" class="col-12 full-width-no-margin"><img src="img/logo-lucasdelirium.png" alt="Lucasdelirium" class="full-width-no-margin"></a></h1><figure class="no-margin"><img src="http://pizzahousenl.ca/wp-content/uploads/2016/04/pizza_trad_pepperoni.png" class="col-12 full-width-no-margin"></figure></div>');
+            document.querySelector('header').insertAdjacentHTML('afterbegin', '<div class="banner row"><figure class="first-figure no-margin"><img src="http://pizzahousenl.ca/wp-content/uploads/2016/04/pizza_trad_pepperoni.png" class="col-12 full-width-no-margin"></figure><a href="#" class="no-margin logo" title="Pagina principale"><img src="img/logo-lucasdelirium.png" alt="Lucasdelirium" class="full-width-no-margin"></a><figure class="no-margin"><img src="http://pizzahousenl.ca/wp-content/uploads/2016/04/pizza_trad_pepperoni.png" class="col-12 full-width-no-margin"></figure></div>');
             insertionsNumber++;
         }
     } else {
         if (document.getElementById('close-mobile-menu-icon')==null && document.getElementById('open-mobile-menu-icon')==null) {
             var headerNav = document.getElementById('header-nav');
-            headerNav.insertAdjacentHTML('afterbegin', '<div class="col-12 close-icon-container"><img id="close-mobile-menu-icon" class="close-icon" src="img/icona-chiudi.svg" alt="Chiudi"></div>');
+            document.getElementById('header-logo').insertAdjacentHTML('beforeend', '<span class="title">Lucasdelirium</span>');
+            headerNav.insertAdjacentHTML('afterbegin', '<div class="col-12 full-width-no-margin close-icon-container"><img id="close-mobile-menu-icon" class="close-icon" src="img/icona-chiudi.svg" alt="Chiudi"></div>');
             headerNav.insertAdjacentHTML('afterend', '<div id="open-mobile-menu-icon" class="mobile-menu-icon"><span class="1"></span><span class="2"></span><span class="3"></span></div>');
             document.getElementById('open-mobile-menu-icon').addEventListener('click', openMobileMenu);
             document.getElementById('close-mobile-menu-icon').addEventListener('click', closeMobileMenu);
