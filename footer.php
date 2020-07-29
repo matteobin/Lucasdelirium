@@ -9,8 +9,9 @@
             <div class="container row center">
                 <div class="col-12"><?php include 'socials-and-contacts.html'; ?></div>
                 <p class="col-12">Lucasdelirium è a cura di Domenico "Diduz" Misciagna. <a href="credits.php">Credits aggiuntivi</a></p>
+                <p class="col-12"><a href="licenze-js.html" data-jslicense="1">Licenze JavaScript</a></p>
             </div>
         </footer>
-        <script src="js/main.js" defer></script>
+        <script src="js/main.min.js" defer></script>
     </body>
 </html>

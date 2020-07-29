@@ -5,7 +5,7 @@
     ob_start("sanitizeOutput");
 ?>
 <!DOCTYPE html>
-<html lang="it-IT">
+<html lang="it">
     <head>
         <link id="style-link" rel="stylesheet" href="css/style.min.css">
         <?php if (isset($previousArticle, $nextArticle)): ?>
@@ -35,8 +35,8 @@
         <header class="row">
             <div class="container row">
                 <a id="header-logo" class="logo" href="#" title="Pagina principale"><img src="img/logo-lucasdelirium.png" alt="Lucasdelirium"></a>
-                <nav id="header-nav" aria-labelledby="nav-sito">
-                    <h2 id="nav-sito">Navigazione sito</h2>
+                <nav id="nav-sito" aria-labelledby="titolo-nav-sito">
+                    <h2 id="titolo-nav-sito">Navigazione sito</h2>
                     <ul>
                         <li class="first"><a href="#">Home</a></li>
                         <li><a href="#">Menù 1</a></li>
