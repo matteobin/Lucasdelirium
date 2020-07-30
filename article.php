@@ -10,7 +10,7 @@
     <h1 class="col-12 center title">Titolo</h1>
     <h2 class="col-12 center subtitle">Sottotitolo</h2>
     <nav id="nav-articolo" class="col-4 no-margin" aria-labelledby="titolo-nav-articolo">
-        <h2 id="titolo-nav-articolo">Navigazione articolo</h2>
+        <h3 id="titolo-nav-articolo">Navigazione articolo</h3>
         <ul>
             <li><a href="#analisi">Analisi</a></li>
             <li><a href="#credits">Credits</a></li>
@@ -58,10 +58,10 @@
     <p class="col-12">Duis tristique, ex vel condimentum laoreet, dui felis blandit ex, vel consequat felis ipsum ac dui. Curabitur ac faucibus massa. Nunc sagittis enim mi, quis lobortis felis dapibus ac. Morbi sit amet pharetra arcu. Etiam viverra interdum ligula, a aliquam eros iaculis vitae. Ut non quam mi. Integer purus ligula, finibus ut elementum vitae, lobortis eget ipsum. Proin a euismod nunc. </p>
     <p class="col-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla nunc eu blandit fermentum. Pellentesque porta, est et tincidunt bibendum, tortor urna tincidunt purus, sed rhoncus tellus ex molestie lorem. In in convallis sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin facilisis, turpis ac rutrum bibendum, risus felis placerat augue, id interdum elit lorem at orci. Duis dictum lacinia luctus. In varius nunc ac fringilla viverra. Vestibulum iaculis ornare erat, id suscipit lectus maximus et. Nunc vestibulum elit ac libero finibus congue. Morbi pellentesque, arcu et auctor fringilla, tellus leo placerat ante, bibendum elementum ligula ipsum in lacus. Nullam auctor malesuada libero, eu pulvinar purus. In tempus egestas odio non imperdiet. Mauris facilisis nunc auctor velit pretium, vitae aliquam leo vestibulum.</p>
 </article>
-<script src="js/generic-article.min.js" defer></script>
+<script src="js/generic-article.js" defer></script>
 <?php 
     if (isset($articleBannerImg, $previousArticle, $nextArticle)) {
-        echo '<script>articleBannerImg=\''.$articleBannerImg.'\';previousArticle=\''.$previousArticle.'\';nextArticle=\''.$nextArticle.'\';</script><script src="js/article-banner-and-nav.min.js" defer></script>';
+        echo '<script>articleBannerImg=\''.$articleBannerImg.'\';previousArticle=\''.$previousArticle.'\';nextArticle=\''.$nextArticle.'\';</script><script src="js/article-banner-and-nav.js" defer></script>';
     }
 ?>
 <?php require_once ('footer.php'); ?>

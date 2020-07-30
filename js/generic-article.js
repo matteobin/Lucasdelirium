@@ -3,8 +3,8 @@ var lightboxElements = document.querySelectorAll('.lightbox a');
 var lightboxElementsNumber = lightboxElements.length;
 if (lightboxElementsNumber!=0) {
 	document.body.insertAdjacentHTML('beforeend', '<div class="lightbox-background"></div><figure class="lightbox-viewer no-margin"><img class="loading" alt="Caricamento"><img class="loaded" alt=""><figcaption></figcaption></figure>');
-	var lightboxBackground = document.getElementsByClassName('lightbox-background')[0];
-	var lightboxViewer = document.getElementsByClassName('lightbox-viewer')[0];
+	var lightboxBackground = document.querySelectorAll('.lightbox-background')[0];
+	var lightboxViewer = document.querySelectorAll('.lightbox-viewer')[0];
 	function closeLightbox(event) {
 		var tagName = event.target.tagName.toLowerCase();
 		if (tagName!='img' && tagName!='figcaption') {
@@ -65,13 +65,13 @@ function hasClass(element, className) {
 }
 var hideGoUpButtonTimeoutStarted = false;
 function hideGoUpButton() {
-	var goUpButton = document.getElementsByClassName('go-up-button')[0];
+	var goUpButton = document.querySelectorAll('.go-up-button')[0];
 	hideGoUpButtonTimeoutStarted = true;
 	setTimeout(function() {removeClass(goUpButton, 'visible');}, 1834);
 	setTimeout(function() {removeClass(goUpButton, 'render');}, 2134);
 }
 function checkScrolledToShowGoUpButton() {
-	var goUpButton = document.getElementsByClassName('go-up-button')[0];
+	var goUpButton = document.querySelectorAll('.go-up-button')[0];
 	if (document.documentElement.scrollTop>=documentHeight/3) {
 		if (!hasClass(goUpButton, 'render')) {
 			addClass(goUpButton, 'render');

@@ -7,7 +7,8 @@
 <!DOCTYPE html>
 <html lang="it">
     <head>
-        <link id="style-link" rel="stylesheet" href="css/style.min.css">
+        <link id="favicon" rel="icon" href="favicon.ico">
+        <link rel="stylesheet" href="css/style.min.css">
         <?php if (isset($previousArticle, $nextArticle)): ?>
             <link rel="prev" href="<?php echo $previousArticle; ?>">
             <link rel="next" href="<?php echo $nextArticle; ?>">
@@ -36,7 +37,7 @@
             <div class="container row">
                 <a id="header-logo" class="logo" href="#" title="Pagina principale"><img src="img/logo-lucasdelirium.png" alt="Lucasdelirium"></a>
                 <nav id="nav-sito" aria-labelledby="titolo-nav-sito">
-                    <h2 id="titolo-nav-sito">Navigazione sito</h2>
+                    <h3 id="titolo-nav-sito">Navigazione sito</h3>
                     <ul>
                         <li class="first"><a href="#">Home</a></li>
                         <li><a href="#">Menù 1</a></li>
