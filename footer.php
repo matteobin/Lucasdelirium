@@ -9,9 +9,8 @@
             <div id="contatti-e-riconoscimenti" class="container row center">
                 <div class="col-12"><?php include 'socials-and-contacts.html'; ?></div>
                 <p class="col-12">Lucasdelirium è a cura di Domenico "Diduz" Misciagna</p>
-                <p class="col-12">Sito sviluppato da Matteo Bini</a></p>
             </div>
         </footer>
-        <script src="js/main.js" defer></script>
+        <script src="js/main.min.js" defer></script>
     </body>
 </html>
