@@ -64,4 +64,4 @@
         echo '<script>articleBannerImg=\''.$articleBannerImg.'\';previousArticle=\''.$previousArticle.'\';nextArticle=\''.$nextArticle.'\';</script><script src="js/article-banner-and-nav.min.js" defer></script>';
     }
 ?>
-<?php require_once ('footer.php'); ?>
+<?php require_once 'footer.php'; ?>
