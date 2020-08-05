@@ -16,7 +16,10 @@
 </html>
 <?php
     $html = sanitizeOutput(ob_get_contents());
-    $file = fopen('cache/'.pathinfo(filter_input(INPUT_SERVER, 'SCRIPT_FILENAME', FILTER_SANITIZE_STRING), PATHINFO_FILENAME).'.html', 'w');
+    if (!is_dir('cache')) {
+        mkdir('cache', 0755);
+    }
+    $file = fopen('cache/'.basename(filter_input(INPUT_SERVER, 'SCRIPT_FILENAME', FILTER_SANITIZE_STRING)).'.html', 'w');
     fwrite($file, $html);
     fclose($file);
 ?>
