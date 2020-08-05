@@ -20,6 +20,6 @@
     RewriteCond expr "! %{QUERY_STRING} -strcmatch '*&cache=no'"
     RewriteCond expr "! %{QUERY_STRING} -strcmatch 'cache=no&*'"
     RewriteCond expr "! %{QUERY_STRING} -strcmatch '*&cache=no&*'"
-    #RewriteCond %{DOCUMENT_ROOT}/cache/%{REQUEST_URI}\.html -f
+    RewriteCond %{DOCUMENT_ROOT}/cache/%{REQUEST_URI}\.html -f
     RewriteRule ^([a-zA-Z0-9\-_]*).php$ /cache/$1.php.html
 </IfModule>
