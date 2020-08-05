@@ -11,6 +11,12 @@
                 <p class="col-12">Lucasdelirium è a cura di Domenico "Diduz" Misciagna</p>
             </div>
         </footer>
-        <script src="js/main.min.js" defer></script>
+        <script src="/js/main.min.js" defer></script>
     </body>
 </html>
+<?php
+    $html = sanitizeOutput(ob_get_contents());
+    $file = fopen('cache/'.pathinfo(filter_input(INPUT_SERVER, 'SCRIPT_FILENAME', FILTER_SANITIZE_STRING), PATHINFO_FILENAME).'.html', 'w');
+    fwrite($file, $html);
+    fclose($file);
+?>
