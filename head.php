@@ -24,7 +24,7 @@
         <a href="#contenuto" class="skip-nav">Vai al contenuto</a>
         <header class="row">
             <div class="container row">
-                <a id="header-logo" class="logo" href="#" title="Pagina principale"><img src="/img/logo-lucasdelirium.png" alt="Lucasdelirium"></a>
+                <a id="header-logo" class="logo" href="/" title="Pagina principale"><img src="/img/logo-lucasdelirium.png" alt="Lucasdelirium"></a>
                 <nav id="nav-sito" aria-labelledby="titolo-nav-sito">
                     <h3 id="titolo-nav-sito">Navigazione sito</h3>
                     <ul>

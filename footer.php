@@ -3,12 +3,12 @@
             <div class="container row no-margin disclaimer">
                 <div class="container">
                     <h3 class="col-12 title">DISCLAIMER</h3>
-                    <p class="col-12 small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu ipsum sit amet orci sagittis iaculis nec quis tortor. Phasellus non efficitur purus, et laoreet nulla. Sed vestibulum sit amet magna eu aliquet. Sed bibendum, nisl et tincidunt pharetra, nisl nisl consequat sem, at pulvinar metus magna non libero.</p>
+                    <p class="col-12 small-text">This site must be considered a "fan site". Lucasdelirium is in no way affiliated to LucasFilm, Disney, Telltale Games, LCG Entertainment, Skunkape Games, Athlon Games, Autumn Moon Entertainment, Crimson Cow, Strategy First, 4Head Studios, Viva Media, Double Fine Productions, Straandlooper Animation, Daedalic Entertainment, IF Games, Vertigo Games, Venture Moon Studios, Terrible Toybox, Sony, Microsoft, Skybound Games, Night School Studio, Campo Santo Productions, AdHoc Studio, Crackpot Entertainment, Creat Studios, Missing Link Games, Hothead Games, Electronic Arts, Electric Eggplant, Kalani Games, Pinhead Games, Ishtar Games, 2 Player Productions, Deck13</p>
                 </div>
             </div>
             <div id="contatti-e-riconoscimenti" class="container row center">
                 <div class="col-12"><?php include 'socials-and-contacts.html'; ?></div>
-                <p class="col-12">Lucasdelirium è a cura di Domenico "Diduz" Misciagna</p>
+                <p class="col-12">Lucasdelirium è a cura di <b>Domenico "Diduz" Misciagna</b></p>
             </div>
         </footer>
         <script src="/js/main.min.js" defer></script>
