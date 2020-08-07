@@ -28,11 +28,13 @@
                 <nav id="nav-sito" aria-labelledby="titolo-nav-sito">
                     <h3 id="titolo-nav-sito">Navigazione sito</h3>
                     <ul>
-                        <li class="first"><a href="#">Home</a></li>
-                        <li><a href="#">Menù 1</a></li>
-                        <li><a href="#">Menù 2</a></li>
-                        <li><a href="#">Menù 3</a></li>
-                        <li><a href="#">Menù 4</a></li>
+                        <li class="first"><a href="/index.php">News</a></li>
+                        <li><a href="/giochi.php">Schede dei giochi</a></li>
+                        <li><a href="/lucaspedia.php">Lucaspedia</a></li>
+                        <li><a href="/articoli.php">Articoli</a></li>
+                        <li><a href="/file.php">File</a></li>
+                        <li><a href="/missione.php">Missione</a></li>
+                        <li><a href="/link.php">Link</a></li>
                     </ul>
                     <?php include 'socials-and-contacts.html'; ?>
                 </nav>
