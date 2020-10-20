@@ -1,4 +1,4 @@
-// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GNU General Public License (GPL) version 3
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-or-Later
 document.head.getElementsByTagName('style')[0].innerHTML += ".container a.nav{display:none}@media only screen and (min-width:45em){.container a.nav{display:block;margin-top:5em}.row .article{margin-left:0!important;margin-right:0!important}}";
 function checkWindowWidthToAddArticleBannerAndNav() {
 	if (window.innerWidth>=720 && document.getElementById('article-banner')==null) {

@@ -1,4 +1,4 @@
-// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GNU General Public License (GPL) version 3
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-or-Later
 var lightboxElements = document.querySelectorAll('.lightbox a');
 var lightboxElementsNumber = lightboxElements.length;
 if (lightboxElementsNumber!=0) {
@@ -96,4 +96,4 @@ window.addEventListener('scroll', function() {
 	checkScrolledToShowGoUpButtonTimeout = setTimeout(function() {checkScrolledToShowGoUpButton();}, 250);
 });
 window.addEventListener('resize', checkScrolledToShowGoUpButton);
-// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-or-Later
+// @license-end
