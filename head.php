@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html lang="it">
     <head>
-        <link rel="icon" href="favicon.ico">
+        <link rel="icon" href="/favicon.ico">
         <link rel="stylesheet" href="/css/style.min.css">
         <?php if (isset($previousArticle, $nextArticle)): ?>
             <link rel="prev" href="<?php echo $previousArticle; ?>">
