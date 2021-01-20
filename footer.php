@@ -11,7 +11,7 @@
 				<p class="col-12">Lucasdelirium è a cura di <b>Domenico "Diduz" Misciagna</b></p>
 			</div>
 		</footer>
-		<script src="/js/main.min.js" defer></script>
+		<script src="js/main.min.js" defer></script>
 	</body>
 </html>
 <?php

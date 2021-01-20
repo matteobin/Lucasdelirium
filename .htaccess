@@ -1,25 +1,25 @@
 <IfModule mod_expires.c>
-    ExpiresActive on
-    ExpiresDefault "access plus 1 years"
+	ExpiresActive on
+	ExpiresDefault "access plus 1 years"
 </IfModule>
 <IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteCond %{QUERY_STRING} "!=cache=0"
-    RewriteCond expr "! %{QUERY_STRING} -strcmatch '*&cache=0'"
-    RewriteCond expr "! %{QUERY_STRING} -strcmatch 'cache=0&*'"
-    RewriteCond expr "! %{QUERY_STRING} -strcmatch '*&cache=0&*'"
-    RewriteCond %{QUERY_STRING} "!=cache=false"
-    RewriteCond expr "! %{QUERY_STRING} -strcmatch '*&cache=false'"
-    RewriteCond expr "! %{QUERY_STRING} -strcmatch 'cache=false&*'"
-    RewriteCond expr "! %{QUERY_STRING} -strcmatch '*&cache=false&*'"
-    RewriteCond %{QUERY_STRING} "!=cache=off"
-    RewriteCond expr "! %{QUERY_STRING} -strcmatch '*&cache=off'"
-    RewriteCond expr "! %{QUERY_STRING} -strcmatch 'cache=off&*'"
-    RewriteCond expr "! %{QUERY_STRING} -strcmatch '*&cache=off&*'"
-    RewriteCond %{QUERY_STRING} "!=cache=no"
-    RewriteCond expr "! %{QUERY_STRING} -strcmatch '*&cache=no'"
-    RewriteCond expr "! %{QUERY_STRING} -strcmatch 'cache=no&*'"
-    RewriteCond expr "! %{QUERY_STRING} -strcmatch '*&cache=no&*'"
-    RewriteCond %{DOCUMENT_ROOT}/cache/%{REQUEST_URI}\.html -f
-    RewriteRule ^([a-zA-Z0-9\-_]*).php$ /cache/$1.php.html
+	RewriteEngine On
+	RewriteCond %{QUERY_STRING} "!=cache=0"
+	RewriteCond expr "! %{QUERY_STRING} -strcmatch '*&cache=0'"
+	RewriteCond expr "! %{QUERY_STRING} -strcmatch 'cache=0&*'"
+	RewriteCond expr "! %{QUERY_STRING} -strcmatch '*&cache=0&*'"
+	RewriteCond %{QUERY_STRING} "!=cache=false"
+	RewriteCond expr "! %{QUERY_STRING} -strcmatch '*&cache=false'"
+	RewriteCond expr "! %{QUERY_STRING} -strcmatch 'cache=false&*'"
+	RewriteCond expr "! %{QUERY_STRING} -strcmatch '*&cache=false&*'"
+	RewriteCond %{QUERY_STRING} "!=cache=off"
+	RewriteCond expr "! %{QUERY_STRING} -strcmatch '*&cache=off'"
+	RewriteCond expr "! %{QUERY_STRING} -strcmatch 'cache=off&*'"
+	RewriteCond expr "! %{QUERY_STRING} -strcmatch '*&cache=off&*'"
+	RewriteCond %{QUERY_STRING} "!=cache=no"
+	RewriteCond expr "! %{QUERY_STRING} -strcmatch '*&cache=no'"
+	RewriteCond expr "! %{QUERY_STRING} -strcmatch 'cache=no&*'"
+	RewriteCond expr "! %{QUERY_STRING} -strcmatch '*&cache=no&*'"
+	RewriteCond %{DOCUMENT_ROOT}/cache/%{REQUEST_URI}\.html -f
+	RewriteRule ^([a-zA-Z0-9\-_]*).php$ /cache/$1.php.html
 </IfModule>
