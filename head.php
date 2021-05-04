@@ -25,8 +25,7 @@
 		<header class="row">
 			<div class="container row">
 				<a id="header-logo" class="logo" href="index.php" title="Pagina principale"><img src="img/logo-lucasdelirium.png" alt="Lucasdelirium"></a>
-				<nav id="nav-sito" aria-labelledby="titolo-nav-sito">
-					<h3 id="titolo-nav-sito">Navigazione sito</h3>
+				<nav id="nav-sito" aria-label="Indice sito">
 					<ul>
 						<li class="first"><a href="index.php">News</a></li>
 						<li><a href="giochi.php">Schede dei giochi</a></li>

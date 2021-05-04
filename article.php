@@ -9,8 +9,7 @@
 <article class="col-10 article">
 	<h1 class="col-12 center title">Titolo</h1>
 	<h2 class="col-12 center subtitle">Sottotitolo</h2>
-	<nav id="nav-articolo" class="col-4 no-margin" aria-labelledby="titolo-nav-articolo">
-		<h3 id="titolo-nav-articolo">Navigazione articolo</h3>
+	<nav id="nav-articolo" class="col-4 no-margin" aria-label="Indice articolo">
 		<ul>
 			<li><a href="#analisi">Analisi</a></li>
 			<li><a href="#credits">Credits</a></li>
