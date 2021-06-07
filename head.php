@@ -1,8 +1,8 @@
 <?php
-	function sanitizeOutput($buffer) {
+	function minifyHtml($buffer) {
 		return preg_replace(array('/\>[^\S ]+/s', '/[^\S ]+\</s', '/(\s)+/s', '/<!--(.|\s)*?-->/'), array('>', '<', '\\1', ''), $buffer);
 	}
-	ob_start('sanitizeOutput');
+	ob_start('minifyHtml');
 ?>
 <!DOCTYPE html>
 <html lang="it">

@@ -8,14 +8,14 @@
 			</div>
 			<div id="contatti-e-riconoscimenti" class="container row center">
 				<div class="col-12"><?php include 'socials-and-contacts.html'; ?></div>
-				<p class="col-12">Lucasdelirium è a cura di <b>Domenico "Diduz" Misciagna</b></p>
+				<p class="col-12">Lucasdelirium è a cura di <b>Domenico "Diduz" Misciagna</b><a href="matteo-bini.html">...</a></p>
 			</div>
 		</footer>
 		<script src="js/main.min.js" defer></script>
 	</body>
 </html>
 <?php
-	$html = sanitizeOutput(ob_get_contents());
+	$html = minifyHtml(ob_get_contents());
 	if (!is_dir('cache')) {
 		mkdir('cache', 0755);
 	}
